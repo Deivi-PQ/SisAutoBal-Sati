@@ -1,0 +1,158 @@
+﻿@using SisAutoZoe.BusinessObjects.Zoe;
+@{
+    ViewData["Title"] = "Lectura";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Verificarf Lectura</title>
+    <link rel="stylesheet" href="~/css/Loader.css" />
+</head>
+<body>
+    <div class="pagetitle">
+        <h1>Verificar Lectura
+        </h1>
+    </div>
+    <section class="section">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="inputDate" class="form-label">Controladora</label>
+                                <select class="form-select" id="Balanza" name="Balanza" style="width: 100%;background-color:khaki">
+                                    <option value="todo">Seleccione</option>
+                                    @{
+                                        if (ViewData["Punto_Paso"] != null)
+                                        {
+                                            foreach (var item in ViewData["Punto_Paso"] as IList<CTPunto_Paso>)
+                                            {
+                                                        <option value="@item.SN">@item.Cod_Punto - @item.SN</option>
+                                            }
+                                        }
+                                    }
+                                </select>                               
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputDate" class="form-label">Tipo Lectura</label>
+                                <select class="form-select" id="Tipo" name="Tipo" style="width: 100%;background-color:khaki">
+                                    <option value="todo">General</option>
+                                    <option value="detallado">Resumido</option>
+                                </select>
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputDate" class="form-label">Nro. Placa</label>
+                                <input type="text" placeholder="Nro. Placa" class="form-control" id="Nro_Placa" name="Nro_Placa" onkeyup="javascript:this.value=this.value.toUpperCase();">
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputDate" class="form-label">Fecha Inicio</label>
+                                <input type="date" id="FechaInicio" name="FechaInicio" class="form-control" min="2000-01-01" max="2100-12-31"
+                                       value="@Convert.ToDateTime(@ViewData["FechaInicio"]).ToString("yyyy-MM-dd")" style="width:100%;">
+                            </div>
+                            <div class="col-md-2">
+                                <label for="inputDate" class="form-label">Fecha Final</label>
+                                <input type="date" id="FechaFinal" name="FechaFinal" class="form-control" min="2000-01-01" max="2100-12-31"
+                                       value="@Convert.ToDateTime(@ViewData["FechaFinal"]).ToString("yyyy-MM-dd")" style="width:100%;">
+                            </div>                            
+                        </div>
+                        <br />
+                        <div class="row">
+                            <div class="text-center">
+                                <button class="btn btn-primary" id="btBuscar" type="button" onclick="return Listar()">
+                                    <span>Buscar</span>
+                                    <img src="~/img/share.png" width="20" height="20" alt="" />
+                                </button>
+                                <button class="btn btn-warning" type="submit" onclick="return Cancelar()">
+                                    <span>Cancelar</span>
+                                    <img src="~/img/cancelar.png" width="20" height="20" alt="" />
+                                </button>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="table">
+                                    <div class="table_section" style="height: 100%">
+                                        <div class="table_header">
+                                            <h5>Lecturas Puntos de Paso</h5>
+                                        </div>
+                                        <table id="taLecturaControladora" class="table" aria-describedby="Lista Registro de Controladoras">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">Placa Unidad</th>
+                                                    <th scope="col">Punto Paso</th>
+                                                    <th scope="col">SN</th>
+                                                    <th scope="col">Card</th>
+                                                    <th scope="col">Time</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        window.onload = function () {           
+        }
+        function Cancelar() {
+            debugger;
+            document.getElementById('Balanza').value = "todo";
+            document.getElementById('Nro_Placa').value = "";
+            document.getElementById('Tipo').value = "todo";
+        }
+        function Listar() {
+            debugger;
+            var SN_ = $('#Balanza').val();
+            var Nro_Placa_ = $('#Nro_Placa').val();
+            var FechaInicio_ = $('#FechaInicio').val();
+            var FechaFinal_ = $('#FechaFinal').val();
+            var Tipo_ = $('#Tipo').val();
+            var record = {
+                SN :SN_,
+                Nro_Placa: Nro_Placa_,
+                FechaInicio: FechaInicio_,
+                FechaFinal: FechaFinal_,
+                Tipo: Tipo_
+            };
+            $.ajax({
+                url: '@Url.Action("Listar")',
+                async: false,
+                type: 'Get',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (data) {
+                    $('#taLecturaControladora > tbody').empty();
+                    debugger;
+                    if (data.length > 0) {
+                        for (var i = 0; i < data.length; i++) {
+                            var newRow =
+                                "<tr>" +
+                                "<td>" + data[i].iD_REGI_PLAC + "</td>" +
+                                "<td>" + data[i].cod_Punto + "</td>" +
+                                "<td>" + data[i].sn + "</td>" +
+                                "<td>" + data[i].card + "</td>" +
+                                "<td>" + ((data[i].time).replace("T", " ")) + "</td>" +
+                            "</tr>";
+                            $(newRow).appendTo("#taLecturaControladora tbody");
+                        }
+                    }
+                    else {
+                        alert("No se encontro datos.");
+                    }
+                },
+                error: function (data) {
+                    window.alert(data.message);
+                }
+            });
+        }
+    </script>
+</body>
+</html>

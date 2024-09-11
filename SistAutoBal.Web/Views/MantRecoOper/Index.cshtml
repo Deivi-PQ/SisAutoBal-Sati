@@ -1,0 +1,380 @@
+﻿@using SisAutoZoe.BusinessObjects.Zoe;
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Recorido de Operaciones</title>
+        <link rel="stylesheet" href="~/css/TableEstilo.css" />
+    </head>
+    <body>
+        <div class="pagetitle">
+        <h1>Recorido de Operaciones</h1>
+        </div>
+        <section class="section">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card" style="padding: 0 0px 0px 0px;">
+                    <div class="card-body" style="padding: 0 0px 0px 0px;">
+                        <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#bordered-home" type="button" role="tab" aria-controls="home" aria-selected="true">Busqueda</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bordered-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Nuevo</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content pt-2" id="borderedTabContent">
+                            <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="row">
+                                    <div class="container-fluid">
+                                        <div class="card card-default">
+                                            <div class="card-body">
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label>Cod. Tipo de Operaciones</label>
+                                                            <input type="text" placeholder="Cod. Tipo de Operaciones" class="form-control" id="Cod_TipoOper" name="Cod_TipoOper">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Cod. Punto</label>
+                                                            <input type="text" placeholder="Cod. Punto" class="form-control" id="Cod_Punto" name="Cod_Punto" style="width:100%;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row">
+                                                    <div class="text-center">
+                                                        <button class="btn btn-primary" id="btBuscar" type="button" onclick="return Buscar()">
+                                                            <span>Buscar</span>
+                                                            <img src="~/img/share.png" width="20" height="20" alt="" />
+                                                        </button>
+                                                        <button class="btn btn-warning" type="submit" onclick="return CancelarBus()">
+                                                            <span>Cancelar</span>
+                                                            <img src="~/img/cancelar.png" width="20" height="20" alt="" />
+                                                        </button>
+                                                        <button class="btn btn-info" type="submit" onclick="return Nuevo()">
+                                                            <span>Nuevo</span>
+                                                            <img src="~/img/new.png" width="20" height="20" alt="" />
+                                                        </button>
+
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="table">
+                                                            <div class="table_section" style="height: 100%">
+                                                                <div class="table_header">
+                                                                    <h5>Recorido de Operaciones</h5>
+                                                                </div>
+                                                                <table id="taRecoOper" class="table" aria-describedby="Lista Recorido de Operaciones">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th scope="col">Cod. Tipo Operaciones</th>
+                                                                            <th scope="col">Cod. Punto</th>
+                                                                            <th scope="col">...</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="bordered-profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="row">
+                                    <div class="container-fluid">
+                                        <div class="card card-default">
+                                            <div class="card-body">                                              
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label>Cod. Tipo de Operaciones</label>
+                                                            <input type="text" placeholder="Cod. Tipo de Operaciones" class="form-control" id="txCod_TipoOper" name="txCod_TipoOper" onclick="return validarCod_TipoOper()">
+                                                            <span class="label" id="valCod_TipoOper" style="display:none; font-size:12px; color:red">Ingrese Cod. Tipo de Operaciones</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Cod. Punto</label>
+                                                            <input type="text" placeholder="Cod. Punto" class="form-control" id="txCod_Punto" name="txCod_Punto" style="width:100%;" onkeyup="javascript:this.value=this.value.toUpperCase();" onclick="return validarCod_Punto()">
+                                                            <span class="label" id="valCod_Punto" style="display:none; font-size:12px; color:red">Ingrese Cod. Punto </span>
+                                                        </div>
+                                                    </div>                                                
+                                                </div>
+                                                <br />
+                                                <div class="row">
+                                                    <div class=" text-center">
+                                                        <div>
+                                                            <button id="btGuardar" class="btn btn-success" title="Guardar" onclick="Grabar()">
+                                                                <span>Guardar Nuevo</span>
+                                                                <img src="~/img/save.png" width="20" height="20" alt="" />
+                                                            </button>
+                                                            <button class="btn btn-warning" type="submit" onclick="return Cancelar()">
+                                                                <span>Cancelar</span>
+                                                                <img src="~/img/cancelar.png" width="20" height="20" alt="" />
+                                                            </button>
+                                                            <button class="btn btn-primary" type="submit" onclick="return Atras()">
+                                                                <span>Atras</span>
+                                                                <img src="~/img/undo.png" width="20" height="20" alt="" />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>                                 
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="Grabado" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Datos Guardados</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="return closePopup()"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card">
+                                            <div class="card-body" style="padding: 0 0px 0px 0px;">
+                                                <h2><label>Registro exitoso.</label></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="return closePopup()">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+
+        function Nuevo() {
+            var firstTab = document.getElementById("profile-tab");
+            firstTab.click();
+            Next();
+        }
+        function Atras() {
+            CancelarBus();
+            var firstTab = document.getElementById("home-tab");
+            firstTab.click();
+        }
+        function Mostrar_Panel_Grabado() {
+            debugger;
+            $("#Grabado").modal("show");
+        }
+        function closePopup() {
+            debugger;
+            $("#Grabado").modal("hide");
+        }
+        function validarCod_TipoOper() {
+            debugger;
+            var Cod_TipoOper = $('#txCod_TipoOper').val();
+            if (Cod_TipoOper == "") {
+                $('#valCod_TipoOper').hide();
+            }
+            else {
+                document.getElementById('valCod_TipoOper').style.display = 'none';
+            }
+        }
+        function validarCod_Punto() {
+            debugger;
+            var Cod_Punto = $('#txCod_Punto').val()
+            if (Cod_Punto == "") {
+                $('#valCod_Punto').hide();
+            }
+            else {
+                document.getElementById('valCod_Punto').style.display = 'none';
+            }
+        }
+        function CancelarBus() {
+            debugger;
+            var tabla = document.getElementById('taRecoOper');
+            $('#taRecoOper > tbody').empty();
+            // Eliminar todas las filas excepto la primera (encabezados)
+            if (tabla.rows.length > 1) {
+                for (var i = 1; i <= tabla.rows.length; i++) {
+                    tabla.deleteRow(i);
+                }
+            }
+            document.getElementById('Cod_TipoOper').value = "";
+            document.getElementById('Cod_Punto').value = "";;
+        }
+        function Cancelar() {
+            document.getElementById('valCod_TipoOper').style.display = 'none';
+            document.getElementById('valCod_Punto').style.display = 'none';
+            document.getElementById('txCod_TipoOper').value = "";
+            document.getElementById('txCod_Punto').value = "";
+            Next();
+        }
+        function Grabar() {
+            debugger;
+            var Cod_TipoOper_ = $('#txCod_TipoOper').val();
+            var Cod_Punto_ = $('#txCod_Punto').val();
+            if (Cod_TipoOper_ != "" && Cod_Punto_ != "" ) {
+                var record = new FormData();
+                record.append("Cod_TipoOper", $('#txCod_TipoOper').val());
+                record.append("Cod_Punto", $('#txCod_Punto').val());
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("Grabar")',
+                    data: record,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    success: function (result) {
+                        var Error = result.error;
+                        //console.log(Error);
+                        if (!Error) {
+                            window.alert(Error);
+                            alert("Registro no Guardado");
+                        }
+                        else {
+                            document.getElementById('txCod_TipoOper').value = "";
+                            document.getElementById('txCod_Punto').value = "";
+                            Mostrar_Panel_Grabado();
+                        }
+                    },
+                    error: function (data) {
+                        window.alert('Error en el grabado');
+                    }
+                });
+            }
+            else {
+                $('#txCod_Punto').focus();
+                if (Cod_Punto_ == "") {
+                    $('#valCod_Punto').show();
+                }
+                if (SN_ == "") {
+                    $('#valSN').show();
+                }
+                if (Des_Punto_Paso_ == "") {
+                    debugger;
+                    $('#valDes_Punto_Paso').show();
+                }
+            }
+        }
+        function Buscar() {
+            debugger;
+            var record = new FormData();
+            record.append("Cod_Punto", $('#Cod_Punto').val());
+            record.append("SN", $('#SN').val());
+            record.append("Des_Punto_Paso", $('#Des_Punto_Paso').val());
+            record.append("Estado", $('#Estado').val());
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("Buscar")',
+                data: record,
+                contentType: "application/json; charset=utf-8",
+                dataType: "json",
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (data) {
+                    $('#taRegControladora > tbody').empty();
+                    debugger;
+                    if (data.length > 0) {
+                        for (var i = 0; i < data.length; i++) {
+                            var newRow =
+                                "<tr>" +
+                                "<td>" + data[i].cod_Punto + "</td>" +
+                                "<td>" + data[i].sn + "</td>" +
+                                "<td>" + data[i].des_Punto_Paso + "</td>" +
+                                "<td>" + (data[i].estado == "A" ? "Activo" : "Inactivo") + "</td>" +
+                                "<td>" +
+                                "<button type='button' class='btn btn-primary' data-bs-toggle='modal' onclick='return Editar(\"" + data[i].cod_Punto + "\")'>Editar</button>" +
+                                "</td>"
+                            "</tr>";
+                            $(newRow).appendTo("#taRegControladora tbody");
+                        }
+                    }
+                    else {
+                        alert("No se encontro datos.");
+                    }
+                },
+                error: function (data) {
+                    window.alert(data.message);
+                }
+            });
+        }
+        function Editar(cod_Punto) {
+            debugger;
+            var record = {
+                Cod_Punto: cod_Punto
+            };
+            $.ajax({
+                url: '@Url.Action("Recuperar")',
+                async: false,
+                type: 'GET',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (data) {
+                    if (data.cod_Punto != null) {
+                        debugger;
+                        var firstTab = document.getElementById("profile-tab");
+                        firstTab.click();
+                        document.getElementById('txCod_Punto').value = data.cod_Punto;
+                        document.getElementById('txSN').value = data.sn;
+                        document.getElementById('txDes_Punto_Paso').value = data.des_Punto_Paso;
+                        document.getElementById('SelecttxEstado').value = data.estado;
+                    }
+                    else {
+                        alert("Datos no Recuperados");
+                    }
+                },
+                error: function (data) {
+                    window.alert(data.message);
+                }
+            });
+        }
+        function Next() {
+            debugger;
+            var record = {};
+            $.ajax({
+                url: '@Url.Action("Next")',
+                async: false,
+                type: 'GET',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (data) {
+                    var next = data.next;
+                    if (next > 0) {
+                        document.getElementById('txCod_Punto').value = next;
+                    }
+                    else {
+                        window.alert("Erro en el servicio.");
+                    }
+                },
+                error: function (data) {
+                    window.alert(data.message);
+                }
+            });
+        }
+        function ejecutaAlerta(Mensaje) {
+            var w = window.open('SisAutBal', '_blank', 'toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=500,width=500,height=20')
+            w.document.write(Mensaje)
+            w.focus()
+            setTimeout(function () { w.close(); }, 5000)
+        }
+        </script>
+    </body>
+</html>

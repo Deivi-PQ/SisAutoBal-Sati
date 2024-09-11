@@ -1,0 +1,15 @@
+﻿@using SisAutoBal.Web.Models;
+@using System.Text.Json;
+
+@inject IHttpContextAccessor _contxt;
+
+@{
+    Layout = "_Layout";
+    ViewData["BasePath"] = $"{Context.Request.Scheme}://{Context.Request.PathBase}";
+    var listmenu = _contxt.HttpContext.Session.Get("ListaMenu");
+    if (listmenu != null && listmenu.Length != 0)
+    {
+        Utils util = new Utils();
+        ViewData["ListaMenu"] = util.RecuperarListaMenu(listmenu);
+    }
+}

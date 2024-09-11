@@ -1,0 +1,370 @@
+﻿@using SisAutoBal.BusinessObjects.AutoBal;
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Mant. Perfil</title>
+    <link rel="stylesheet" href="~/css/TableEstilo.css" />
+</head>
+<body>
+    <div class="pagetitle">
+        <h1>Mant. Perfil</h1>
+    </div>
+    <section class="section">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card" style="padding: 0 0px 0px 0px;">
+                    <div class="card-body" style="padding: 0 0px 0px 0px;">
+                        <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#bordered-home" type="button" role="tab" aria-controls="home" aria-selected="true">Busqueda</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bordered-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Nuevo</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content pt-2" id="borderedTabContent">
+                            <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="row">
+                                    <div class="container-fluid">
+                                        <div class="card card-default">
+                                            <div class="card-body">
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <label for="inputDate" class="form-label">ID Perfil</label>
+                                                        <input type="text" placeholder="ID Perfil" class="form-control" id="IDPerfil" name="IDPerfil">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="inputDate" class="form-label">Descripcion Perfil</label>
+                                                        <input type="text" placeholder="Descripcion Perfil" class="form-control" id="Des_Perfil" name="Des_Perfil" style="width:100%;">
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label for="inputDate" class="form-label">Estado</label>
+                                                        <select class="form-select" id="Estado" name="Estado" style="width: 100%;background-color:khaki">
+                                                            <option value="A">Activo</option>
+                                                            <option value="X">Inactivo</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row">
+                                                    <div class="text-center">
+                                                        <button class="btn btn-primary" id="btBuscar" type="button" onclick="return Buscar()">
+                                                            <span>Buscar</span>
+                                                            <img src="~/img/share.png" width="20" height="20" alt="" />
+                                                        </button>
+                                                        <button class="btn btn-warning" type="submit" onclick="return CancelarBus()">
+                                                            <span>Cancelar</span>
+                                                            <img src="~/img/cancelar.png" width="20" height="20" alt="" />
+                                                        </button>
+                                                        <button class="btn btn-info" type="submit" onclick="return Nuevo()">
+                                                            <span>Nuevo</span>
+                                                            <img src="~/img/new.png" width="20" height="20" alt="" />
+                                                        </button>
+
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="table">
+                                                            <div class="table_section" style="height: 100%">
+                                                                <div class="table_header">
+                                                                    <h5>Perfil Usuario</h5>
+                                                                </div>
+                                                                <table id="taPerfil" class="table" aria-describedby="Lista de perfiles">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th scope="col">ID. Perfil</th>
+                                                                            <th scope="col">Descripcion Perfil</th>
+                                                                            <th scope="col">Estado</th>
+                                                                            <th scope="col">...</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="bordered-profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="row">
+                                    <div class="container-fluid">
+                                        <div class="card card-default">
+                                            <div class="card-body">
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-md-3">                                                     
+                                                        <label for="inputDate" class="form-label">ID Perfil</label>
+                                                        <input type="text" placeholder="Descripcion Perfil" class="form-control" id="txIDPerfil" name="txIDPerfil" style="width:100%;" onclick="return validarIDPerfil()" oninput="validateNumberInput(event)">
+                                                        <span class="label" id="valIDPerfil" style="display:none; font-size:12px; color:red">Ingrese ID Perfil</span>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="inputDate" class="form-label">Descripcion Perfil</label>
+                                                        <input type="text" placeholder="Descripcion Perfil" class="form-control" id="txDes_Perfil" name="txDes_Perfil" style="width:100%;" onclick="return validarDes_Perfil()">
+                                                        <span class="label" id="valDes_Perfil" style="display:none; font-size:12px; color:red">Ingrese Descripcion Perfil</span>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <label for="inputDate" class="form-label">Estado</label>
+                                                        <select class="form-select" id="txEstado" name="txEstado" style="width: 100%;background-color:khaki">
+                                                            <option value="A">Activo</option>
+                                                            <option value="X">Inactivo</option>
+                                                        </select>
+                                                    </div>
+                                                </div>   
+                                                <br />
+                                                <div class="row">
+                                                    <div class=" text-center">
+                                                        <div>
+                                                            <button id="btGuardar" class="btn btn-success" title="Guardar" onclick="Grabar()">
+                                                                <span>Guardar Nuevo</span>
+                                                                <img src="~/img/save.png" width="20" height="20" alt="" />
+                                                            </button>
+                                                            <button class="btn btn-warning" type="submit" onclick="return Cancelar()">
+                                                                <span>Cancelar</span>
+                                                                <img src="~/img/cancelar.png" width="20" height="20" alt="" />
+                                                            </button>
+                                                            <button class="btn btn-primary" type="submit" onclick="return Atras()">
+                                                                <span>Atras</span>
+                                                                <img src="~/img/undo.png" width="20" height="20" alt="" />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="Grabado" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Datos Guardados</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="return closePopup()"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card">
+                                            <div class="card-body" style="padding: 0 0px 0px 0px;">
+                                                <h2><label>Registro exitoso.</label></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="return closePopup()">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function Nuevo() {
+            Cancelar();
+            var firstTab = document.getElementById("profile-tab");
+            firstTab.click();
+        }
+        function Atras() {
+            CancelarBus();
+            var firstTab = document.getElementById("home-tab");
+            firstTab.click();
+        }
+        function Mostrar_Panel_Grabado() {
+            debugger;
+            $("#Grabado").modal("show");
+        }
+        function closePopup() {
+            debugger;
+            $("#Grabado").modal("hide");
+        }
+        function validarIDPerfil() {
+            debugger;
+            var IDPerfil = $('#txIDPerfil').val();
+            if (IDPerfil == "") {
+                $('#valIDPerfil').hide();
+            }
+            else {
+                document.getElementById('valIDPerfil').style.display = 'none';
+            }
+        }
+        function validarDes_Perfil() {
+            debugger;
+            var Des_Perfil = $('#txDes_Perfil').val()
+            if (Des_Perfil == "") {
+                $('#valDes_Perfil').hide();
+            }
+            else {
+                document.getElementById('valDes_Perfil').style.display = 'none';
+            }
+        }
+        
+        function CancelarBus() {
+            debugger;
+            var tabla = document.getElementById('taPerfil');
+            $('#taPerfil > tbody').empty();
+            // Eliminar todas las filas excepto la primera (encabezados)
+            if (tabla.rows.length > 1) {
+                for (var i = 1; i <= tabla.rows.length; i++) {
+                    tabla.deleteRow(i);
+                }
+            }
+            document.getElementById('IDPerfil').value = "";
+            document.getElementById('Des_Perfil').value = "";
+            document.getElementById('Estado').value = "A";
+        }
+        function Cancelar() {
+            document.getElementById('valIDPerfil').style.display = 'none';
+            document.getElementById('valDes_Perfil').style.display = 'none';
+            document.getElementById('txIDPerfil').value = "";
+            document.getElementById('txDes_Perfil').value = "";
+            document.getElementById('txEstado').value = "A";
+        }
+
+        function Grabar() {
+            debugger;
+            var IDPerfil_ = $('#txIDPerfil').val();
+            var Des_Perfil_ = $('#txDes_Perfil').val();
+            var Estado_ = $('#txEstado').val();
+            if (IDPerfil_ != "" && Des_Perfil_ != "" && Estado_ != "") {
+                var record = new FormData();
+                record.append("IDPerfil", $('#txIDPerfil').val());
+                record.append("Des_Perfil", $('#txDes_Perfil').val());
+                record.append("Estado", $('#txEstado').val());
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("Grabar")',
+                    data: record,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    success: function (result) {
+                        var Error = result.error;
+                        //console.log(Error);
+                        if (!Error) {
+                            window.alert(Error);
+                            alert("Registro no Guardado");
+                        }
+                        else {
+                            document.getElementById('valIDPerfil').style.display = 'none';
+                            document.getElementById('valDes_Perfil').style.display = 'none';
+                            document.getElementById('txIDPerfil').value = "";
+                            document.getElementById('txDes_Perfil').value = "";
+                            document.getElementById('txEstado').value = "A";
+                            Mostrar_Panel_Grabado();
+                        }
+                    },
+                    error: function (data) {
+                        window.alert('Error en el grabado');
+                    }
+                });
+            }
+            else {                                           
+                $('#txIDPerfil').focus();
+                if (IDPerfil_ == "") {
+                    $('#valIDPerfil').show();
+                }
+                if (Des_Perfil_ == "") {
+                    $('#valDes_Perfil').show();
+                }
+            }
+        }
+        function Buscar() {
+            debugger;
+            var record = {
+                IDPerfil: $('#IDPerfil').val(),
+                Des_Perfil: $('#Des_Perfil').val(),
+                Estado: $('#Estado').val()
+            }
+            $.ajax({
+                url: '@Url.Action("Buscar")',
+                async: false,
+                type: 'GET',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (data) {
+                    $('#taPerfil > tbody').empty();
+                    debugger;
+                    if (data.length > 0) {
+                        for (var i = 0; i < data.length; i++) {
+                            var newRow =
+                                "<tr>" +
+                                "<td>" + data[i].idPerfil + "</td>" +
+                                "<td>" + data[i].des_Perfil + "</td>" +
+                                "<td>" + (data[i].estado=="A"?"Activo":"Inactivo") + "</td>" +
+                                "<td>" +
+                                "<button type='button' class='btn btn-primary' data-bs-toggle='modal' onclick='return Editar(\"" + data[i].idPerfil + "\")'>Editar</button>" +
+                                "</td>"
+                            "</tr>";
+                            $(newRow).appendTo("#taPerfil tbody");
+                        }
+                    }
+                    else {
+                        alert("No se encontro datos.");
+                    }
+                },
+                error: function (data) {
+                    window.alert(data.message);
+                }
+            });
+        }
+        function Editar(IDPerfil) {
+            debugger;
+            Cancelar();
+            var record = {
+                IDPerfil: IDPerfil
+            };
+            $.ajax({
+                url: '@Url.Action("Recuperar")',
+                async: false,
+                type: 'GET',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (data) {
+                    if (data.idPerfil != null) {
+                        debugger;
+                        var firstTab = document.getElementById("profile-tab");
+                        firstTab.click();
+                        document.getElementById('txIDPerfil').value = data.idPerfil;
+                        document.getElementById('txDes_Perfil').value = data.des_Perfil;
+                        document.getElementById('txEstado').value = data.estado;
+                        
+                    }
+                    else {
+                        alert("Datos no Recuperados");
+                    }
+                },
+                error: function (data) {
+                    window.alert(data.message);
+                }
+            });
+        }
+        function ejecutaAlerta(Mensaje) {
+            var w = window.open('SisAutBal', '_blank', 'toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=500,width=500,height=20')
+            w.document.write(Mensaje)
+            w.focus()
+            setTimeout(function () { w.close(); }, 5000)
+        }
+        function validateNumberInput(event) {
+            var input = event.target;
+            // Elimina cualquier carácter que no sea un número
+            input.value = input.value.replace(/[^0-9]/g, '');
+        }
+    </script>
+</body>
+</html>

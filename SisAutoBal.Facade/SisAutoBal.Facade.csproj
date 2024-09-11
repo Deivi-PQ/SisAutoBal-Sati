@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="OfiOper\CPROG_ATENFacade.gen.cs" />
+    <Compile Remove="OfiOper\CREQU_ATENFacade.gen.cs" />
+    <Compile Remove="OfiOper\CTARJFacade.gen.cs" />
+    <Compile Remove="OfiOper\DREQU_ATENFacade.gen.cs" />
+    <Compile Remove="OfiOper\MCLIEFacade.gen.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SisAutoBal.BusinessObjects\SisAutoBal.BusinessObjects.csproj" />
+    <ProjectReference Include="..\SisAutoBal.DataObjects\SisAutoBal.DataObjects.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="LibreriaBSNet.v3">
+      <HintPath>..\Librerias\LibreriaBSNet.v3.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

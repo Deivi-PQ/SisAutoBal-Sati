@@ -1,0 +1,353 @@
+﻿@using SisAutoBal.BusinessObjects.AutoBal;
+
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SisAutoBal - Bloqueo en Balanza</title>
+    <link rel="stylesheet" href="~/css/Loader.css" />
+</head>
+<body>
+    <div class="pagetitle">
+        <h1>Aprobación de bloqueos en balanza</h1>
+    </div>
+    <section class="section">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <form class="row g-3">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <label for="inputDate" class="form-label">Fecha</label>
+                                        <input type="date" id="Fecha" class="form-control" style="width:100%;">
+                                    </div>                       
+                                    <div class="col-md-3">
+                                        <label for="inputSelect" class="form-label">Estado</label>
+                                        <select class="form-select" id="SelectEstado" aria-label="State">
+                                            <option value="0" selected>Pendiente</option>
+                                            <option value="1">Aprobado</option>
+                                            <option value="2">Bloqueado</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="text-center">
+                                    <button type="button" class="btn btn-danger" onclick="return Limpiar()">Limpiar</button>
+                                    <button type="button" class="btn btn-primary" onclick="return BuscarBloqueos(Fecha,SelectEstado)">Realizar Busqueda</button>
+                                </div>
+                                <div class="col-lg-12">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <table class="table" id="TablaBloq">
+                                                <thead>
+                                                    <tr>
+                                                        <th scope="col">ID.Bloqueo</th>
+                                                        <th scope="col">Nro.Placa</th>
+                                                        <th scope="col">Nro.Req. Atencion</th>
+                                                        <th scope="col">Motivo Bloqueo</th>
+                                                        <th scope="col">Estado</th>
+                                                        <th scope="col">Fecha</th>
+                                                        <th scope="col">ID. Usuario</th>
+                                                        <th scope="col">Operaciones</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody></tbody>
+                                            </table>
+                                            <div class="modal fade" id="Guardar" tabindex="-1">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title">Confirma Aprobacion</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p id="MensajeApr"></p>
+                                                            <p id="MensajeApr_"></p>
+                                                            <div class="col-sm-3" hidden>
+                                                                <label for="inputText" class="form-label">Requ. Atención</label>
+                                                                <input type="text" id="idReqAten" class="form-control" style="width:100%;">
+
+                                                                <label for="inputText" class="form-label">Nro. Placa</label>
+                                                                <input type="text" id="nro_Placa" class="form-control" style="width:100%;">
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                                            <button type="button" class="btn btn-primary" onclick="return Aprobar(idReqAten, nro_Placa)">Aprobar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal fade" id="Rechazar" tabindex="-1">
+                                                <div class="modal-dialog modal-dialog-centered">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title">Confirma Rechazo</h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <p id="MensajeRec"></p>
+                                                            <p id="MensajeRec_"></p>
+                                                            <div class="col-sm-3" hidden>
+                                                                <label for="inputText" class="form-label">ID. BloqueBal</label>
+                                                                <input type="text" id="idBloqueBal_" class="form-control" style="width:100%;">
+
+                                                                <label for="inputText" class="form-label">Nro. Placa</label>
+                                                                <input type="text" id="nro_Placa_" class="form-control" style="width:100%;">
+                                                            </div>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                                                            <button type="button" class="btn btn-primary" onclick="return Rechazar(idBloqueBal_,nro_Placa_)">Rechazar</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        window.onload = function () {
+            document.getElementById('contenedor_carga').style.visibility = 'hidden';
+            document.getElementById('contenedor_carga').style.opacity = 0;
+            var FechaFinal = new Date();
+            let Dias = 1000 * 60 * 60 * 24 * 5;
+            var FechaInicio = new Date(FechaFinal.getTime() - Dias);
+            var mes = FechaFinal.getMonth() + 1;
+            var dia = FechaFinal.getDate();
+            var anio = FechaFinal.getFullYear();
+            if (dia < 10)
+                dia = '0' + dia;
+            if (mes < 10)
+                mes = '0' + mes;
+
+            document.getElementById('Fecha').value = anio + "-" + mes + "-" + dia;
+        }
+
+        function Limpiar()
+        {
+            document.getElementById('contenedor_carga').style.visibility = 'hidden';
+            document.getElementById('contenedor_carga').style.opacity = 0;
+            var FechaFinal = new Date();
+            let Dias = 1000 * 60 * 60 * 24 * 5;
+            var FechaInicio = new Date(FechaFinal.getTime() - Dias);
+            var mes = FechaFinal.getMonth() + 1;
+            var dia = FechaFinal.getDate();
+            var anio = FechaFinal.getFullYear();
+            if (dia < 10)
+                dia = '0' + dia;
+            if (mes < 10)
+                mes = '0' + mes;
+
+            document.getElementById('Fecha').value = anio + "-" + mes + "-" + dia;
+
+            document.getElementById('SelectEstado').value = 0;
+
+        }
+        function Rechazar(iD_REQU_ATEN, nro_Placa) {
+            debugger;
+            var record = {
+                ID_REQU_ATEN: iD_REQU_ATEN.value,
+                Nro_Placa: nro_Placa.value,
+                EstadoBloqueo: 'R'
+            };
+
+            $.ajax({
+                url: '/Inicio/Actualizar',
+                async: false,
+                type: 'Get',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (data) {
+                    $("#Rechazar").modal("hide");
+                    $('#TablaBloq > tbody').empty();
+                    for (var i = 0; i < data.length; i++) {
+                        var newRow = getStringFilaDetalle(data, i);
+                        $(newRow).appendTo("#TablaBloq tbody");
+                    }
+                },
+                error: function (data) {
+                    alert("Error en la consulta")
+                }
+            });
+        }
+
+        function Aprobar(iD_REQU_ATEN, nro_Placa) {
+            debugger;
+            var record = {
+                ID_REQU_ATEN: iD_REQU_ATEN.value,
+                Nro_Placa: nro_Placa.value,
+                EstadoBloqueo: 'A'
+            };
+
+            $.ajax({
+                url: '/Inicio/Actualizar',
+                async: false,
+                type: 'Get',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (data) {
+                    $("#Guardar").modal("hide");
+                    $('#TablaBloq > tbody').empty();
+                    for (var i = 0; i < data.length; i++) {
+                        var newRow = getStringFilaDetalle(data, i);
+
+                        $(newRow).appendTo("#TablaBloq tbody");
+                    }
+                },
+                error: function (data) {
+                    alert("Error en la consulta");
+                }
+            });
+        }
+        function AbrirRechazar(iD_REQU_ATEN, nro_Placa) {
+            debugger;
+            $("#Rechazar").modal("show");
+            const p2 = document.getElementById("MensajeRec");
+            p2.innerText = "Rechazar el requerimiento de atencion: " + iD_REQU_ATEN;
+            const p = document.getElementById("MensajeRec_");
+            p.innerText = "con Placa: " + nro_Placa;
+
+            //enviar id y req
+            document.getElementById('idBloqueBal_').value = iD_REQU_ATEN;
+            document.getElementById('nro_Placa_').value = nro_Placa;
+        }
+
+        function AbrirAprobar(iD_REQU_ATEN, nro_Placa) {
+            $("#Guardar").modal("show");
+            const p2 = document.getElementById("MensajeApr");
+            p2.innerText = "Aprobar el requerimiento de atencion: " + iD_REQU_ATEN;
+            const p = document.getElementById("MensajeApr_");
+            p.innerText = "con Placa: " + nro_Placa;
+            //enviar id y req
+            document.getElementById('idReqAten').value = iD_REQU_ATEN;
+            document.getElementById('nro_Placa').value = nro_Placa;
+        }
+        function getStringFilaDetalle(data, i) {
+            return '<tr>' +
+                '<td>' + data[i].idBloqueBal + '</td>' +
+                '<td>' + data[i].nro_Placa + '</td>' +
+                '<td>' + data[i].iD_REQU_ATEN + '</td>' +
+                '<td>' + data[i].motivoBloqueo + '</td>' +
+                '<td>' + (data[i].estadoBloqueo == 'P' ? "Pendiente" : "Atendido") + '</td>' +
+                '<td>' + data[i].fechaAprobacion + '</td>' +
+                '<td>' + data[i].iD_USUA + '</td>' +
+                '<td>' +
+                '<button type="button" class="btn btn-danger" data-bs-toggle="modal" onclick="return AbrirRechazar(\'' + data[i].iD_REQU_ATEN + '\',\'' + data[i].nro_Placa + '\')">Rechazar</button>' +
+                '<button type="button" class="btn btn-primary" data-bs-toggle="modal" onclick="return AbrirAprobar(\'' + data[i].iD_REQU_ATEN + '\',\'' + data[i].nro_Placa + '\')">Aprobar</button>' +
+                '</td>'
+            '</tr>';
+        }
+
+        function BuscarBloqueos(Fecha, Estado) {
+            var record = {
+                Estado: Estado.value,
+                Fecha: Fecha.value
+            };
+
+            console.log("Inicio/Listar");
+
+            $.ajax({
+                url: '/Inicio/Listar',
+                async: false,
+                type: 'Get',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (data) {
+                    console.log(data.length);
+                    if (data.length > 0) {
+                        console.log("Estado.value");
+                        console.log(Estado.value);
+
+                        $('#TablaBloq > tbody').empty();
+                        if (Estado.value == 0) {
+                            for (var i = 0; i < data.length; i++) {
+                                var newRow = getStringFilaDetalle(data, i);
+
+                                $(newRow).appendTo("#TablaBloq tbody");
+                            }
+                        }
+                        else {
+                            console.log("Entro con datos");
+
+                            for (var i = 0; i < data.length; i++) {
+                                var newRow = getStringFilaDetalle(data, i);
+
+                                $(newRow).appendTo("#TablaBloq tbody");
+                            }
+                        }
+                    }
+                    else {
+                        $('#TablaBloq > tbody').empty();
+                        alert('No se encontron datos.');
+                    }
+                },
+                error: function (data) {
+                    alert("Error en la consulta revice el servicio.");
+                }
+            });
+            document.getElementById('contenedor_carga').style.opacity = 0;
+        }
+        function BuscarBloqueos(Fecha, Estado) {
+            var record = {
+                Estado: Estado.value,
+                Fecha: Fecha.value
+            };
+
+            console.log("Inicio/Listar");
+
+            $.ajax({
+                url: '/Inicio/Listar',
+                async: false,
+                type: 'Get',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (data) {
+                    console.log(data.length);
+                    if (data.length > 0) {
+                        console.log("Estado.value");
+                        console.log(Estado.value);
+
+                        $('#TablaBloq > tbody').empty();
+                        if (Estado.value == 0) {
+                            for (var i = 0; i < data.length; i++) {
+                                var newRow = getStringFilaDetalle(data, i);
+
+                                $(newRow).appendTo("#TablaBloq tbody");
+                            }
+                        }
+                        else {
+                            console.log("Entro con datos");
+
+                            for (var i = 0; i < data.length; i++) {
+                                var newRow = getStringFilaDetalle(data, i);
+
+                                $(newRow).appendTo("#TablaBloq tbody");
+                            }
+                        }
+                    }
+                    else {
+                        $('#TablaBloq > tbody').empty();
+                        alert('No se encontron datos.');
+                    }
+                },
+                error: function (data) {
+                    alert("Error en la consulta revice el servicio.");
+                }
+            });
+            document.getElementById('contenedor_carga').style.opacity = 0;
+        }
+    </script>
+</body>
+</html>

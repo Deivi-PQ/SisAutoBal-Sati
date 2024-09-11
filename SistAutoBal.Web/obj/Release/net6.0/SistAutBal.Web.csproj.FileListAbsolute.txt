@@ -1,0 +1,824 @@
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\appsettings.Development.json
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\appsettings.json
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\libman.json
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\SistAutBal.Web.staticwebassets.runtime.json
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\SistAutBal.Web.exe
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\SistAutBal.Web.deps.json
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\SistAutBal.Web.runtimeconfig.json
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\SistAutBal.Web.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\SistAutBal.Web.pdb
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Humanizer.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\MessagePack.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\MessagePack.Annotations.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.AspNet.SignalR.Core.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.AspNetCore.Razor.Language.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.Build.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.Build.Framework.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.Features.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.Razor.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.Scripting.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.VisualBasic.Features.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.DiaSymReader.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.NET.StringTools.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.Owin.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.Owin.Security.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Debugger.Contracts.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\dotnet-aspnet-codegenerator-design.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Newtonsoft.Json.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\NuGet.Common.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\NuGet.Configuration.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\NuGet.DependencyResolver.Core.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\NuGet.Frameworks.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\NuGet.LibraryModel.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\NuGet.Packaging.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\NuGet.ProjectModel.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\NuGet.Protocol.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\NuGet.Versioning.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Owin.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\System.Composition.AttributedModel.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\System.Composition.Convention.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\System.Composition.Hosting.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\System.Composition.Runtime.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\System.Composition.TypedParts.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\System.Configuration.ConfigurationManager.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\System.Drawing.Common.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\System.Reflection.MetadataLoadContext.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\System.Security.Permissions.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\System.Windows.Extensions.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\Ofisis.Ofisegu.Sese0001.Comp0001.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\SisAutBal.BusinessObjects.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\SisAutBal.BusinessObjects.pdb
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\SisAutBal.BusinessObjects.dll.config
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.csproj.AssemblyReference.cache
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.GeneratedMSBuildEditorConfig.editorconfig
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.AssemblyInfoInputs.cache
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.AssemblyInfo.cs
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.csproj.CoreCompileInputs.cache
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.MvcApplicationPartsAssemblyInfo.cache
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.RazorAssemblyInfo.cache
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.RazorAssemblyInfo.cs
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\staticwebassets\msbuild.SistAutBal.Web.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\staticwebassets\msbuild.build.SistAutBal.Web.props
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\staticwebassets\msbuild.buildMultiTargeting.SistAutBal.Web.props
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\staticwebassets\msbuild.buildTransitive.SistAutBal.Web.props
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\staticwebassets.pack.json
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\staticwebassets.build.json
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\staticwebassets.development.json
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\scopedcss\bundle\SistAutBal.Web.styles.css
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\scopedcss\projectbundle\SistAutBal.Web.bundle.scp.css
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.csproj.CopyComplete
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\refint\SistAutBal.Web.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.pdb
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.genruntimeconfig.cache
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\obj\Release\net6.0\ref\SistAutBal.Web.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\AspNetCore.Reporting.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\AspNetCore.ReportingServices.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\PdfSharpCore.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\ICSharpCode.SharpZipLib.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\SixLabors.Fonts.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\SixLabors.ImageSharp.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\System.CodeDom.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\System.Data.SqlClient.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\System.ServiceModel.Http.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\System.ServiceModel.Primitives.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\System.ServiceModel.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\de\PdfSharpCore.resources.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\runtimes\win-arm64\native\sni.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\runtimes\win-x64\native\sni.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\runtimes\win-x86\native\sni.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
+E:\Proyecto Tisur\Sistema Automatizacion Balanza\SistAutBal.Web\bin\Release\net6.0\runtimes\win\lib\netstandard2.0\System.Private.ServiceModel.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\appsettings.json
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\libman.json
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SistAutBal.Web.staticwebassets.runtime.json
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SistAutBal.Web.exe
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SistAutBal.Web.deps.json
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SistAutBal.Web.runtimeconfig.json
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SistAutBal.Web.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SistAutBal.Web.pdb
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\AspNetCore.Reporting.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\AspNetCore.ReportingServices.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Humanizer.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\MessagePack.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\MessagePack.Annotations.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.AspNet.SignalR.Core.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.AspNetCore.Razor.Language.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.Build.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.Build.Framework.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.Features.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.Razor.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.Scripting.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.VisualBasic.Features.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.Workspaces.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.DiaSymReader.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.NET.StringTools.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.Owin.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.Owin.Security.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Debugger.Contracts.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\dotnet-aspnet-codegenerator-design.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Newtonsoft.Json.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\NuGet.Common.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\NuGet.Configuration.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\NuGet.DependencyResolver.Core.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\NuGet.Frameworks.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\NuGet.LibraryModel.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\NuGet.Packaging.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\NuGet.ProjectModel.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\NuGet.Protocol.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\NuGet.Versioning.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Owin.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\PdfSharpCore.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ICSharpCode.SharpZipLib.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SixLabors.Fonts.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SixLabors.ImageSharp.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.CodeDom.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Composition.AttributedModel.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Composition.Convention.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Composition.Hosting.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Composition.Runtime.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Composition.TypedParts.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Configuration.ConfigurationManager.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Data.SqlClient.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Drawing.Common.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Reflection.MetadataLoadContext.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Security.Permissions.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.ServiceModel.Http.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.ServiceModel.Primitives.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.ServiceModel.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Windows.Extensions.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\PdfSharpCore.resources.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\win-arm64\native\sni.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\win-x64\native\sni.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\win-x86\native\sni.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\win\lib\netstandard2.0\System.Private.ServiceModel.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Ofisis.Ofisegu.Sese0001.Comp0001.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SisAutBal.BusinessObjects.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SisAutBal.BusinessObjects.pdb
+E:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SisAutBal.BusinessObjects.dll.config
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.csproj.AssemblyReference.cache
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.GeneratedMSBuildEditorConfig.editorconfig
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.AssemblyInfoInputs.cache
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.AssemblyInfo.cs
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.csproj.CoreCompileInputs.cache
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.MvcApplicationPartsAssemblyInfo.cache
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.RazorAssemblyInfo.cache
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.RazorAssemblyInfo.cs
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\staticwebassets\msbuild.SistAutBal.Web.Microsoft.AspNetCore.StaticWebAssets.props
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\staticwebassets\msbuild.build.SistAutBal.Web.props
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\staticwebassets\msbuild.buildMultiTargeting.SistAutBal.Web.props
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\staticwebassets\msbuild.buildTransitive.SistAutBal.Web.props
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\staticwebassets.pack.json
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\staticwebassets.build.json
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\staticwebassets.development.json
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\scopedcss\bundle\SistAutBal.Web.styles.css
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\scopedcss\projectbundle\SistAutBal.Web.bundle.scp.css
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.csproj.CopyComplete
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\refint\SistAutBal.Web.dll
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.pdb
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.genruntimeconfig.cache
+E:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\ref\SistAutBal.Web.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\appsettings.json
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\libman.json
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SistAutBal.Web.staticwebassets.runtime.json
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SistAutBal.Web.exe
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SistAutBal.Web.deps.json
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SistAutBal.Web.runtimeconfig.json
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SistAutBal.Web.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SistAutBal.Web.pdb
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\AspNetCore.Reporting.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\AspNetCore.ReportingServices.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Humanizer.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\MessagePack.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\MessagePack.Annotations.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.AspNet.SignalR.Core.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.AspNetCore.Razor.Language.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.Build.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.Build.Framework.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.AnalyzerUtilities.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.CSharp.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.CSharp.Features.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.Features.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.Razor.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.Scripting.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.VisualBasic.Features.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.VisualBasic.Workspaces.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.DiaSymReader.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.DotNet.Scaffolding.Shared.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.NET.StringTools.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.Owin.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.Owin.Security.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Debugger.Contracts.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Core.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\dotnet-aspnet-codegenerator-design.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.EntityFrameworkCore.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Templating.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGeneration.Utils.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.VisualStudio.Web.CodeGenerators.Mvc.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Newtonsoft.Json.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\NuGet.Common.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\NuGet.Configuration.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\NuGet.DependencyResolver.Core.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\NuGet.Frameworks.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\NuGet.LibraryModel.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\NuGet.Packaging.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\NuGet.ProjectModel.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\NuGet.Protocol.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\NuGet.Versioning.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Owin.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\PdfSharpCore.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ICSharpCode.SharpZipLib.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SixLabors.Fonts.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SixLabors.ImageSharp.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.CodeDom.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Composition.AttributedModel.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Composition.Convention.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Composition.Hosting.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Composition.Runtime.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Composition.TypedParts.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Configuration.ConfigurationManager.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Data.SqlClient.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Drawing.Common.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Reflection.MetadataLoadContext.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Security.Permissions.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.ServiceModel.Http.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.ServiceModel.Primitives.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.ServiceModel.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\System.Windows.Extensions.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Features.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\de\PdfSharpCore.resources.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\win-arm64\native\sni.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\win-x64\native\sni.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\win-x86\native\sni.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\unix\lib\netstandard2.0\System.Private.ServiceModel.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\win\lib\netstandard2.0\System.Private.ServiceModel.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\Ofisis.Ofisegu.Sese0001.Comp0001.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SisAutBal.BusinessObjects.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SisAutBal.BusinessObjects.pdb
+D:\Automatizacion-Balanzas\SistAutBal.Web\bin\Release\net6.0\SisAutBal.BusinessObjects.dll.config
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.csproj.AssemblyReference.cache
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.GeneratedMSBuildEditorConfig.editorconfig
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.AssemblyInfoInputs.cache
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.AssemblyInfo.cs
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.csproj.CoreCompileInputs.cache
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.MvcApplicationPartsAssemblyInfo.cache
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.RazorAssemblyInfo.cache
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.RazorAssemblyInfo.cs
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.sourcelink.json
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\staticwebassets.build.json
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\staticwebassets.development.json
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\staticwebassets\msbuild.SistAutBal.Web.Microsoft.AspNetCore.StaticWebAssets.props
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\staticwebassets\msbuild.build.SistAutBal.Web.props
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\staticwebassets\msbuild.buildMultiTargeting.SistAutBal.Web.props
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\staticwebassets\msbuild.buildTransitive.SistAutBal.Web.props
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\staticwebassets.pack.json
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\scopedcss\bundle\SistAutBal.Web.styles.css
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\scopedcss\projectbundle\SistAutBal.Web.bundle.scp.css
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.csproj.CopyComplete
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\refint\SistAutBal.Web.dll
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.pdb
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\SistAutBal.Web.genruntimeconfig.cache
+D:\Automatizacion-Balanzas\SistAutBal.Web\obj\Release\net6.0\ref\SistAutBal.Web.dll

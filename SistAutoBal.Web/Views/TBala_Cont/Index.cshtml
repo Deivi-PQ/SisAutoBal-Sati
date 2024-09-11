@@ -1,0 +1,424 @@
+﻿@using SisAutoBal.BusinessObjects.AutoBal;
+@using SisAutoBal.BusinessObjects.OfiOper;
+@{
+    ViewData["Title"] = "Inicio";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SisAutoBal - Bala Controladora</title>
+    <link rel="stylesheet" href="~/css/TableEstilo.css" />
+</head>
+<body>
+    <div class="pagetitle">
+        <h1>Registro Bala Controladora</h1>
+    </div>
+    <section class="section">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card" style="padding: 0 0px 0px 0px;">
+                    <div class="card-body" style="padding: 0 0px 0px 0px;">
+                        <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#bordered-home" type="button" role="tab" aria-controls="home" aria-selected="true">Busqueda</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bordered-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Nuevo</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content pt-2" id="borderedTabContent">
+                            <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="row">
+                                    <div class="container-fluid">
+                                        <div class="card card-default">
+                                            <div class="card-body">
+                                                <br />                                                  
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label>Balanza</label>
+                                                            <select class="form-select" id="Balanza" name="Balanza" style="width: 100%;background-color:khaki">
+                                                                <option value="todo">Seleccione</option>
+                                                                @{
+                                                                    if (ViewData["Balanza"] != null)
+                                                                    {
+                                                                        foreach (var item in ViewData["Balanza"] as IList<CTTIPO_BALA>)
+                                                                        {
+                                                                                                                <option value="@item.ID_BALA">@item.DE_TIPO</option>
+                                                                        }
+                                                                    }
+                                                                }
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>SN Controladora</label>
+                                                            <input type="text" placeholder="SN Controladora" class="form-control" id="SNControladora" name="SNControladora" style="width:100%;">
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <br />
+                                                <div class="row">                                                   
+                                                    <div class="text-center">
+                                                        <button class="btn btn-primary" id="btBuscar" type="button" onclick="return Buscar()">
+                                                            <span>Buscar</span>
+                                                            <img src="~/img/share.png" width="20" height="20" alt="" />
+                                                        </button>
+                                                        <button class="btn btn-warning" type="submit" onclick="return CancelarBus()">
+                                                            <span>Cancelar</span>
+                                                            <img src="~/img/cancelar.png" width="20" height="20" alt="" />
+                                                        </button>
+                                                        <button class="btn btn-info" type="submit" onclick="return Nuevo()">
+                                                            <span>Nuevo</span>
+                                                            <img src="~/img/new.png" width="20" height="20" alt="" />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="table">
+                                                            <div class="table_section" style="height: 100%">
+                                                                <div class="table_header">
+                                                                    <h5>Lista Bala Controladora</h5>
+                                                                </div>
+                                                                <table id="tBala" class="table" aria-describedby="Lista">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th scope="col">ID Bala</th>
+                                                                            <th scope="col">Bala</th>
+                                                                            <th scope="col">SN Controladora</th>
+                                                                            <th scope="col">...</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="bordered-profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="row">
+                                    <div class="container-fluid">
+                                        <div class="card card-default">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label>Balanza</label>
+                                                            <select class="form-select" id="BalanzaAct" name="BalanzaAct" style="width: 100%;background-color:khaki" onclick="return validarBalanza()">
+                                                                <option value="todo">Seleccione</option>
+                                                                @{
+                                                                    if (ViewData["Balanza"] != null)
+                                                                    {
+                                                                        foreach (var item in ViewData["Balanza"] as IList<CTTIPO_BALA>)
+                                                                        {
+                                                                                                    <option value="@item.ID_BALA">@item.DE_TIPO</option>
+                                                                        }
+                                                                    }                                                              }
+                                                            </select>
+                                                            <span class="label" id="valBalanzaAct" style="display:none; font-size:12px; color:red">Seleccionee Bala</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>SN Controladora</label>
+                                                            <input type="text" placeholder="SN Controladora" class="form-control" id="SNControladoraAct" name="SNControladoraAct" style="width:100%;" onclick="return validarSNContr()">
+                                                            <span class="label" id="valSNControladoraAct" style="display:none; font-size:12px; color:red">Ingrese SN Controladora</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row">
+                                                    <div class=" text-center">
+                                                        <div>
+                                                            <button id="btGuardar" class="btn btn-success" title="Guardar" onclick="Grabar()">
+                                                                <span>Guardar Nuevo</span>
+                                                                <img src="~/img/save.png" width="20" height="20" alt="" />
+                                                            </button>
+                                                            <button class="btn btn-warning" type="submit" onclick="return Cancelar()">
+                                                                <span>Cancelar</span>
+                                                                <img src="~/img/cancelar.png" width="20" height="20" alt="" />
+                                                            </button>
+                                                            <button class="btn btn-primary" type="submit" onclick="return Atras()">
+                                                                <span>Atras</span>
+                                                                <img src="~/img/undo.png" width="20" height="20" alt="" />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="Grabado" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Datos Guardados</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="return closePopup()"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card">
+                                                <div class="card-body" style="padding: 0 0px 0px 0px;">
+                                                    <h2><label>Carga de registro exitoso.</label></h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="return closePopup()">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="Eliminar" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Informacion</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="return closePopupEli()"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card">
+                                                <div class="card-body" style="padding: 0 0px 0px 0px;">
+                                                    <h2><label>Registro Eliminado..!.</label></h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="return closePopupEli()">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        window.onload = function () { 
+            Buscar();
+        }
+        function Buscar() {
+            debugger;
+            var record = {
+                ID_Bala: $('#Balanza').val(),
+                SNContr: $('#SNControladora').val()
+            };
+
+            $.ajax({
+                url: '@Url.Action("Buscar")',
+                async: false,
+                type: 'Get',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (data) {
+                    console.log(data.length);
+                    if (data.length > 0) {
+                        $('#tBala > tbody').empty();
+                        for (var i = 0; i < data.length; i++) {
+                            var newRow = getStringFilaDetalle(data, i);
+                            $(newRow).appendTo("#tBala tbody");
+                        }
+                    }
+                    else {
+                        $('#tBala > tbody').empty();
+                        alert('No se encontron datos.');
+                    }
+                },
+                error: function (data) {
+                    alert("Error en la consulta revice el servicio.");
+                }
+            });
+        }
+        function Listar() {
+            debugger;
+            var record = {
+            };
+            $.ajax({
+                url: '@Url.Action("Listar")',
+                async: false,
+                type: 'Get',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (data) {
+                    console.log(data.length);
+                    if (data.length > 0) {
+                        $('#tBala > tbody').empty();
+                        for (var i = 0; i < data.length; i++) {
+                            var newRow = getStringFilaDetalle(data, i);
+                            $(newRow).appendTo("#tBala tbody");
+                        }
+                    }
+                    else {
+                        $('#tBala > tbody').empty();
+                        alert('No se encontron datos.');
+                    }
+                },
+                error: function (data) {
+                    alert("Error en la consulta revice el servicio.");
+                }
+            });
+        }
+        function getStringFilaDetalle(data, i) {
+            return '<tr>' +
+                '<td>' + data[i].iD_BALA + '</td>' +
+                '<td>' + data[i].dE_TIPO + '</td>' +
+                '<td>' + data[i].snContr + '</td>' +
+                '<td>' +
+                '<button type="button" class="btn btn-danger" data-bs-toggle="modal" onclick="return Editar(\'' + data[i].iD_BALA + '\',\'' + data[i].snContr + '\')">Editar</button>' +
+                '<button type="button" class="btn btn-primary" data-bs-toggle="modal" onclick="return Eliminar(\'' + data[i].iD_BALA + '\',\'' + data[i].snContr + '\')">Eliminar</button>' +
+                '</td>'
+            '</tr>';
+        }
+        function Nuevo() {
+            var firstTab = document.getElementById("profile-tab");
+            firstTab.click();
+        }
+        function Atras() {
+            Buscar();
+            var firstTab = document.getElementById("home-tab");
+            firstTab.click();
+        }
+        function Cancelar() {
+            document.getElementById('BalanzaAct').value = "todo";
+            document.getElementById('SNControladoraAct').value = "";
+        }
+        function CancelarBus() {
+            document.getElementById('Balanza').value = "todo";
+            document.getElementById('SNControladora').value = "";
+        }
+        function Editar(IDBala,SnComtr) { 
+            debugger;
+            document.getElementById('BalanzaAct').value = IDBala;
+            document.getElementById('SNControladoraAct').value = SnComtr;
+            var firstTab = document.getElementById("profile-tab");
+            firstTab.click();
+        }
+        function Eliminar(IDBala_, SnComtr_) {
+            debugger;
+            var confirmacion = confirm("¿Estás seguro de que deseas eliminar este registro?");
+            // Si el usuario confirma, realizar la eliminación
+            if (confirmacion) 
+            {
+                var record = {
+                        IDBala: IDBala_
+                };
+                $.ajax({
+                    url: '@Url.Action("Eliminar")',
+                    async: false,
+                    type: 'Get',
+                    data: record,
+                    beforeSend: function (xhr, opts) { },
+                    success: function (data) {
+                        debugger;
+                        if (data) {
+                            Mostrar_Panel_Eliminar();
+                        } else { 
+                            alert("Registro no eliminado.!");
+                        }
+                    },
+                    error: function (data) {
+                        alert("Error en la consulta revice el servicio.");
+                    }
+                });
+            } else {
+                console.log("Eliminación cancelada.");
+            }           
+        }
+        function Grabar() { 
+            debugger;
+            var ID_Bala = $('#BalanzaAct').val();
+            var SNContr = $('#SNControladoraAct').val();
+            if (ID_Bala != "todo" && SNContr !="") {
+                var record = new FormData();
+                record.append("ID_Bala", ID_Bala);
+                record.append("SNContr", SNContr);
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("Grabar")',
+                    data: record,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    success: function (result) {
+                        var Error = result.error;
+                        //console.log(Error);
+                        if (!Error) {
+                            window.alert(Error);
+                            alert("Registro no Guardado");
+                        }
+                        else {
+                            document.getElementById('BalanzaAct').value = "todo";
+                            document.getElementById('SNControladoraAct').value = "";
+                            Mostrar_Panel_Grabado();
+                        }
+                    },
+                    error: function (data) {
+                        window.alert('Error en el grabado');
+                    }
+                });
+            }
+            else { 
+                $('#BalanzaAct').focus();
+                if (ID_Bala == "todo") {
+                    $('#valBalanzaAct').show();
+                }
+                if (SNContr == "") {
+                    $('#valSNControladoraAct').show();
+                }
+            }
+        }
+        function validarBalanza() {
+            debugger;
+            var ID_Bala = $('#BalanzaAct').val();
+            if (ID_Bala == "todo") {
+                $('#valBalanzaAct').hide();
+            }
+            else {
+                document.getElementById('valBalanzaAct').style.display = 'none';
+            }
+        }
+        function validarSNContr() {
+            debugger;
+            var SNContr = $('#SNControladoraAct').val()
+            if (SNContr == "") {
+                $('#valSNControladoraAct').hide();
+            }
+            else {
+                document.getElementById('valSNControladoraAct').style.display = 'none';
+            }
+        }
+        function Mostrar_Panel_Grabado() {
+            debugger;
+            $("#Grabado").modal("show");
+        }
+        function closePopup() {
+            debugger;
+            $("#Grabado").modal("hide");
+        }
+        function Mostrar_Panel_Eliminar() {
+            debugger;
+            $("#Eliminar").modal("show");
+        }
+        function closePopupEli() {
+            debugger;
+            $("#Eliminar").modal("hide");
+            Buscar();
+        }
+    </script>
+</body>
+</html>

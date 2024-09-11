@@ -1,0 +1,107 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SisAutoBal.Web
+build_property.RootNamespace = SisAutoBal.Web
+build_property.ProjectDir = D:\Proyecto Bal\SisAutoBal\SistAutoBal.Web\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\Proyecto Bal\SisAutoBal\SistAutoBal.Web
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/AtencionUsuarioReport/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXRlbmNpb25Vc3VhcmlvUmVwb3J0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/Inicio/Inicio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSW5pY2lvXEluaWNpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/Lectura/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGVjdHVyYVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/Login/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/MantAccesoPerfil/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudEFjY2Vzb1BlcmZpbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/MantAcceso/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudEFjY2Vzb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/MantPerfil/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudFBlcmZpbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/MantRecoOper/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudFJlY29PcGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/MantRegistroCont/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudFJlZ2lzdHJvQ29udFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/MantTipoOper/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudFRpcG9PcGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/MantUsuario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFudFVzdWFyaW9cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/Reporte/Reporte.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVwb3J0ZVxSZXBvcnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/SignalR/SignalR.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnbmFsUlxTaWduYWxSLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/TBala_Cont/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVEJhbGFfQ29udFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/TREGI_RFID/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVFJFR0lfUkZJRFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/Proyecto Bal/SisAutoBal/SistAutoBal.Web/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-bfy78s9kpd

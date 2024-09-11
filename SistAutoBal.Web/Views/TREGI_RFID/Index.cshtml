@@ -1,0 +1,932 @@
+﻿@using SisAutoBal.BusinessObjects.AutoBal;
+
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>SisAutoBal - Registro RFID</title>
+    <link rel="stylesheet" href="~/css/TableEstilo.css" />
+</head>
+<body>
+    <div class="pagetitle">
+        <h1>Registro RFID</h1>
+    </div>
+    <section class="section">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card" style="padding: 0 0px 0px 0px;">
+                    <div class="card-body" style="padding: 0 0px 0px 0px;">
+                        <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#bordered-home" type="button" role="tab" aria-controls="home" aria-selected="true">Busqueda</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bordered-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Nuevo</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content pt-2" id="borderedTabContent">
+                            <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="row">
+                                    <div class="container-fluid">
+                                        <div class="card card-default">
+                                            <div class="card-body">
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label>ID. REGISTRO PLACA</label>
+                                                            <input type="text" placeholder="ID. REGISTRO PLACA" class="form-control" id="id_REGI_PLAC" name="id_REGI_PLAC" style="width:100%;" onkeyup="javascript:this.value=this.value.toUpperCase();">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Codigo RFID</label>
+                                                            <input type="text" placeholder="DESCRIPCION" class="form-control" id="Cod_RFID" name="Cod_RFID" style="width:100%;">
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label>Fecha vigencia Inicio</label>
+                                                            <input type="date" id="vigenciaIni" class="form-control" min="2000-01-01" max="2100-12-31"
+                                                                   value="@Convert.ToDateTime(@ViewData["vigenciaIni"]).ToString("yyyy-MM-dd")"
+                                                                   style="width:100%;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label>Fecha Vigencia Fin</label>
+                                                            <input type="date" id="vigenciaFin" class="form-control" min="2000-01-01" max="2100-12-31"
+                                                                   value="@Convert.ToDateTime(@ViewData["vigenciaFin"]).ToString("yyyy-MM-dd")"
+                                                                   style="width:100%;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row">
+                                                    <div class="text-center">
+                                                        <button class="btn btn-primary" id="btBuscar" type="button" onclick="return Buscar()">
+                                                            <span>Buscar</span>
+                                                            <img src="~/img/share.png" width="20" height="20" alt="" />
+                                                        </button>
+                                                        <button class="btn btn-warning" type="submit" onclick="return CancelarBus()">
+                                                            <span>Cancelar</span>
+                                                            <img src="~/img/cancelar.png" width="20" height="20" alt="" />
+                                                        </button>
+                                                        <button class="btn btn-info" type="submit" onclick="return Nuevo()">
+                                                            <span>Nuevo</span>
+                                                            <img src="~/img/new.png" width="20" height="20" alt="" />
+                                                        </button>
+                                                        
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="table">
+                                                            <div class="table_section" style="height: 100%">
+                                                                <div class="table_header">
+                                                                    <h5>Lista de RFID</h5>
+                                                                </div>
+                                                                <table id="taregirfid" class="table" aria-describedby="Lista de RFID">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th scope="col">ID_REGI_PLAC</th>
+                                                                            <th scope="col">Cod_RFID</th>
+                                                                            <th scope="col">Vigencia</th>
+                                                                            <th scope="col">...</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="bordered-profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="row">
+                                    <div class="container-fluid">
+                                        <div class="card card-default">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label>ID. Registro Placa</label>
+                                                                    <input type="text" placeholder="ID. Registro Placa" class="form-control" id="txID_REGI_PLAC" name="txID_REGI_PLAC" style="width:100%;" onkeyup="javascript:this.value=this.value.toUpperCase();" onclick="return validarID_REGI_PLAC()">
+                                                                    <span class="label" id="valID_REGI_PLAC" style="display:none; font-size:12px; color:red">Ingrese ID. Registro Placa</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label>Codigo RFID</label>
+                                                                    <input type="text" placeholder="Codigo RFID" class="form-control" id="txCod_RFID" name="txCod_RFID" style="width:100%;" onclick="return validarCod_RFID()">
+                                                                    <span class="label" id="valCod_RFID" style="display:none; font-size:12px; color:red">Ingrese Codigo RFID</span>
+                                                                </div>                                                              
+                                                            </div>
+                                                            <div class="col-md-3" id="nuevoCodRFID">
+                                                                <div class="form-group">
+                                                                    <label>Nuevo Codigo RFID</label>
+                                                                    <input type="text" placeholder="Ingrese Nuevo Codigo RFID" class="form-control" id="Cod_RFIDNuevo" name="Cod_RFIDNuevo" style="width:100%;" onclick="return validarCod_RFIDnuevo()">
+                                                                    <span class="label" id="valCod_RFIDNuevo" style="display:none; font-size:12px; color:red">Ingrese Nuevo Codigo RFID</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row">
+                                                            <div class="col-md-3">
+                                                                <div class="form-group">
+                                                                    <label>Fecha de vigencia</label>
+                                                                    <input type="date" id="fevigencia" class="form-control" min="2000-01-01" max="2100-12-31"
+                                                                           value="@Convert.ToDateTime(@ViewData["fvigencia"]).ToString("yyyy-MM-dd")"
+                                                                           style="width:100%;" onclick="return validarVigencia()">
+                                                                    <span class="label" id="valvigencia" style="display:none; font-size:12px; color:red">Ingrese Fecha de vigencia valida</span>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-3">
+                                                                <label>Estado</label>
+                                                                <select class="form-select" id="SelectEstado" aria-label="State">
+                                                                    <option value="0" selected>Activo</option>
+                                                                    <option value="1">Desactivo</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <br/>
+                                                        <div class="row">
+                                                            <div class=" text-center">
+                                                                <div>
+                                                                    <button id="btGuardar" class="btn btn-success" title="Guardar" onclick="Grabar()">
+                                                                        <span>Guardar Nuevo</span>
+                                                                        <img src="~/img/save.png" width="20" height="20" alt="" />
+                                                                    </button>
+                                                                    <button class="btn btn-warning" type="submit" onclick="return Cancelar()">
+                                                                        <span>Cancelar</span>
+                                                                        <img src="~/img/cancelar.png" width="20" height="20" alt="" />
+                                                                    </button>
+                                                                    <button class="btn btn-primary" type="submit" onclick="return Atras()">
+                                                                        <span>Atras</span>
+                                                                        <img src="~/img/undo.png" width="20" height="20" alt="" />
+                                                                    </button>
+                                                                </div>
+                                                                <div id="btnActualizar">
+                                                                    <button class="btn btn-info" type="submit" onclick="return ActualizarRFID()">
+                                                                        <span>Actualizar RFID</span>
+                                                                    </button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <br />
+                                                        <div class="row">
+                                                            <h5>Carga por grupo</h5>
+                                                        </div>
+                                                        <div class="row"> 
+                                                            <div class="col-md-5">
+                                                                <textarea id="textoAnaliz" name="texto" rows="10" cols="40" style="width:100%;" placeholder="Ingrese texto a procesar"></textarea>
+                                                            </div>
+                                                            <div class ="col-md-5">
+                                                                <button id="uploadbtn" class="btn btn-primary" title="CargarArchivo" onclick="AnalizarTexto()">
+                                                                    <span>Proceso y Carga</span>
+                                                                    <img src="~/img/cargando.png" width="20" height="20" alt="" />
+                                                                </button>
+                                                                <button id="liverarCarga" class="btn btn-danger" title="liverarCarga" onclick="EliminarFormato()">
+                                                                    <span>Limpiar</span>
+                                                                    <img src="~/img/limpiar.png" width="20" height="20" alt="" />
+                                                                </button>
+                                 
+                                                            </div>
+                                                        </div>
+                                                        <br />
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <div class="table">
+                                                                    <div class="table_header">
+                                                                        <h5>Lectura de RFID</h5>
+                                                                    </div>
+                                                                    <div class="table_section" style="height: 400px">
+                                                                        <table id="tableErolado" class="table" aria-describedby="Lista de RFID">
+                                                                            <thead>
+                                                                                <tr>
+                                                                                    <th scope="col">ID_REGI_PLAC</th>
+                                                                                    <th scope="col">Cod_RFID</th>
+                                                                                    <th scope="col">Vigencia</th>
+                                                                                    <th scope="col">Observacion</th>
+                                                                                </tr>
+                                                                            </thead>
+                                                                            <tbody>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>                                    
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="Grabado" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Datos Guardados</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="return closePopup()"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card">
+                                                <div class="card-body" style="padding: 0 0px 0px 0px;">   
+                                                      <h2><label>Registro exitoso.</label></h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="return closePopup()">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        window.onload = function () {
+            $('#nuevoCodRFID').hide();
+            $('#btnActualizar').hide();
+        }
+        function ValidarFormato()
+        {
+            debugger;
+            var Texto = $('#textoAnaliz').val();
+            if ( Texto == "")
+            {
+                alert('Ingrese Texto a Procesar');
+                return;
+            }
+        }
+        function EliminarFormato()
+        {
+            debugger;
+            document.getElementById('textoAnaliz').value = "";
+        }
+        function AnalizarTexto() {
+            debugger;
+            var Texto = $('#textoAnaliz').val();
+            if (Texto == "" )
+            {
+                 alert('Ingrese texto a Procesar');
+                 return;
+            }  
+            else
+            {
+                var record = {
+                    Texto: Texto
+                };
+                $.ajax({
+                    url: '@Url.Action("ProcesarText")',
+                    async: false,
+                    type: 'Get',
+                    data: record,
+                    beforeSend: function (xhr, opts) { },
+                    success: function (data) {
+                        document.getElementById('textoAnaliz').value = "";
+                        $('#tableErolado > tbody').empty();
+                        for (var i = 0; i < data.length; i++) {
+                            var newRow =
+                                "<tr>" +
+                                    "<td>" + data[i].iD_REGI_PLAC + "</td>" +
+                                    "<td>" + data[i].cod_RFID + "</td>" +
+                                    "<td>" + (data[i].fecha_Valida.replace("T", " ")) + "</td>" +
+                                    "<td>" + data[i].estadoCarga + "</td>" +
+                                "</tr>";
+                            $(newRow).appendTo("#tableErolado tbody");
+                        }
+                    },
+                    error: function (data) {
+                        Rpta = "Error";
+                    }
+                });
+            }
+        }
+        function GuardarDatos()
+        {
+            debugger;
+            var Lista = [];
+            Lista = SubirLista();
+            if (Lista.length > 0) {
+                for (var i = 0; i < Lista.length; i++) {
+                    $('#tableErolado > tbody').empty();
+                    for (var i = 0; i < Lista.length; i++) {
+                        var newRow =
+                            "<tr>" +
+                            "<td>" + Lista[i].ID_REGI_PLAC + "</td>" +
+                            "<td>" + Lista[i].Cod_RFID + "</td>" +
+                            "<td>" + (Lista[i].FeVigencia.replace("T", " ")) + "</td>" +
+                            "<td>" + Lista[i].Estado + "</td>" +
+                            "</tr>";
+                        $(newRow).appendTo("#tableErolado tbody");
+                    }
+                }
+            }
+            else {
+                alert("No se encontro datos.");
+            }
+        }
+        function SubirLista() 
+        {
+            var Lista = [];
+            var tabla = document.getElementById('tableErolado');
+            if (tabla.rows.length > 1) {
+                var filas = tabla.getElementsByTagName('tr');
+                for (var i = 0; i < filas.length; i++) {
+                    var fila = filas[i];
+                    var celdas = fila.getElementsByTagName('td');
+                    if (celdas.length > 0) {
+                        var ID_REGI_PLAC_ = (celdas[0].innerText).toString();
+                        var Cod_RFID_ = (celdas[1].innerText).toString();
+                        var FeVigencia_ = (celdas[2].innerText).toString();
+                        var Estado_ = "-";
+                        if (ID_REGI_PLAC_ != "" && Cod_RFID_ != "" && FeVigencia_ != "0001-01-01" && FeVigencia_ != "") {
+                            var ExsistePlaca_ = ExsistePlaca(ID_REGI_PLAC_);
+                            if (ExsistePlaca_) {
+                                var ExisteCod_RFID_ = ExisteCod_RFID(Cod_RFID_, ID_REGI_PLAC_);
+                                if (ExisteCod_RFID_ == "Actualizar" || ExisteCod_RFID_ == "Insertar") {
+                                    var record = new FormData();
+                                    record.append("ID_REGI_PLAC", ID_REGI_PLAC_);
+                                    record.append("Cod_RFID", Cod_RFID_);
+                                    record.append("Vigencia", FeVigencia_);
+                                    record.append("DateNew", "");
+                                    record.append("DateEdit", "");
+                                    record.append("UserNew", "");
+                                    record.append("UserEdit", "");
+                                    record.append("Estado", Estado_);
+                                    $.ajax({
+                                        type: "POST",
+                                        url: '@Url.Action("Grabar")',
+                                        data: record,
+                                        contentType: "application/json; charset=utf-8",
+                                        dataType: "json",
+                                        cache: false,
+                                        contentType: false,
+                                        processData: false,
+                                        success: function (result) {
+                                            var Error = result.error;
+                                            if (Error) {
+                                                var Datos = {};
+                                                Datos.ID_REGI_PLAC = ID_REGI_PLAC_;
+                                                Datos.Cod_RFID = Cod_RFID_;
+                                                Datos.FeVigencia = FeVigencia_;
+                                                Datos.Estado = "Datos Guardados";
+                                                Lista.push(Datos);
+                                            }
+                                            else {
+                                                var Datos = {};
+                                                Datos.ID_REGI_PLAC = ID_REGI_PLAC_;
+                                                Datos.Cod_RFID = Cod_RFID_;
+                                                Datos.FeVigencia = FeVigencia_;
+                                                Datos.Estado = "Error en la carga de datos";
+                                                Lista.push(Datos);
+                                            }
+                                        },
+                                        error: function (data) {
+                                            var Datos = {};
+                                            Datos.ID_REGI_PLAC = ID_REGI_PLAC_;
+                                            Datos.Cod_RFID = Cod_RFID_;
+                                            Datos.FeVigencia = FeVigencia_;
+                                            Datos.Estado = "Error en el grabado";
+                                            Lista.push(Datos);
+                                        }
+                                    });
+                                }
+                                else if (ExisteCod_RFID_ == "Existe") {
+                                    var Datos = {};
+                                    Datos.ID_REGI_PLAC = ID_REGI_PLAC_;
+                                    Datos.Cod_RFID = Cod_RFID_;
+                                    Datos.FeVigencia = FeVigencia_;
+                                    Datos.Estado = "Codigo RFID ya asignado";
+                                    Lista.push(Datos);
+                                }
+                            }
+                            else {
+                                var Datos = {};
+                                Datos.ID_REGI_PLAC = ID_REGI_PLAC_;
+                                Datos.Cod_RFID = Cod_RFID_;
+                                Datos.FeVigencia = FeVigencia_;
+                                Datos.Estado = "Nro de placa no registrado en el sistema";
+                                Lista.push(Datos);
+                            }
+                        }
+                    }
+                    else {
+                        var Datos = {};
+                        Datos.ID_REGI_PLAC = "No hay Datos";
+                        Datos.Cod_RFID = "No hay Datos";
+                        Datos.FeVigencia = "No hay Datos";
+                        Datos.Estado = "No hay Datos";
+                        Lista.push(Datos);
+                    }
+                }    
+            }
+            debugger;
+            return Lista;
+        }
+
+        function getB64Str(buffer) {
+            var binary = '';
+            var bytes = new Uint8Array(buffer);
+            var len = bytes.byteLength;
+            for (var i = 0; i < len; i++) {
+                binary += String.fromCharCode(bytes[i]);
+            }
+            return window.btoa(binary);
+        }
+        function Fecha()
+        {
+            var fecha = new Date();
+            var mes = fecha.getMonth() + 1;
+            var dia = fecha.getDate();
+            var anio = fecha.getFullYear();
+            if (dia < 10) 
+                dia = '0' + dia;
+            if (mes < 10)
+                mes = '0' + mes;
+
+            return anio + "-" + mes + "-" + dia;
+        }
+        function Fecha_(fecha) {
+            var fecha = new Date(fecha);
+            var mes = fecha.getMonth() + 1;
+            var dia = fecha.getDate();
+            var anio = fecha.getFullYear();
+            if (dia < 10)
+                dia = '0' + dia;
+            if (mes < 10)
+                mes = '0' + mes;
+
+            return anio + "-" + mes + "-" + dia;
+        }
+        function Nuevo()
+        {
+            var fecha = new Date();
+            var mes = fecha.getMonth() + 1;
+            var dia = fecha.getDate();
+            var anio = fecha.getFullYear();
+            if (dia < 10) 
+                dia = '0' + dia;
+            if (mes < 10)
+                mes = '0' + mes;
+            document.getElementById('txID_REGI_PLAC').value = "";
+            document.getElementById('txCod_RFID').value = "";
+            document.getElementById('fevigencia').value = anio + "-" + mes + "-" + dia;
+            document.getElementById('SelectEstado').value = 0;
+            var firstTab = document.getElementById("profile-tab");
+            firstTab.click();
+        }
+        
+        function CancelarBus()
+        {
+            debugger;
+            var tabla = document.getElementById('taregirfid');
+            $('#taregirfid > tbody').empty();
+            // Eliminar todas las filas excepto la primera (encabezados)
+            if (tabla.rows.length > 1) {
+                for (var i = 1; i <= tabla.rows.length; i++) {
+                    tabla.deleteRow(i);
+                }
+            }
+            document.getElementById('id_REGI_PLAC').value = "";
+            document.getElementById('Cod_RFID').value = "";
+        }
+        function Cancelar()
+        {
+            var fecha = new Date();
+            var mes = fecha.getMonth() + 1;
+            var dia = fecha.getDate();
+            var anio = fecha.getFullYear();
+            if (dia < 10) 
+                dia = '0' + dia;
+            if (mes < 10)
+                mes = '0' + mes;
+            $('#nuevoCodRFID').hide();
+            $('#btnActualizar').hide();
+            document.getElementById('valCod_RFID').style.display = 'none';
+            document.getElementById('valID_REGI_PLAC').style.display = 'none';
+            document.getElementById('txID_REGI_PLAC').value = "";
+            document.getElementById('txCod_RFID').value = "";
+            document.getElementById('fevigencia').value = anio + "-" + mes + "-" + dia;
+            document.getElementById('SelectEstado').value = 0;
+        }
+        function Atras()
+        {
+            $('#nuevoCodRFID').hide();
+            $('#btnActualizar').hide();
+            CancelarBus();
+            var firstTab = document.getElementById("home-tab");
+            firstTab.click();
+
+        }
+        function Mostrar_Panel_Grabado() {
+            debugger;
+            $("#Grabado").modal("show");
+        }
+        function closePopup() {
+            debugger;
+            $("#Grabado").modal("hide");
+        }
+        function validarID_REGI_PLAC() {
+            debugger;
+            var ID_REGI_PLAC = $('#txID_REGI_PLAC').val();
+            if ( ID_REGI_PLAC == "") {
+                $('#valID_REGI_PLAC').hide();
+            }
+            else {
+                document.getElementById('valID_REGI_PLAC').style.display = 'none';
+            }
+        }
+        function validarCod_RFID() {
+            debugger;
+            var Cod_RFID = $('#txCod_RFID').val()
+            if (Cod_RFID == "") {
+                $('#valCod_RFID').hide();
+            }
+            else {
+                document.getElementById('valCod_RFID').style.display = 'none';
+            }
+        }
+        function validarCod_RFIDnuevo() {
+            debugger;
+            var Cod_RFID = $('#Cod_RFIDNuevo').val()
+            if (Cod_RFID == "") {
+                $('#valCod_RFIDNuevo').hide();
+            }
+            else {
+                document.getElementById('valCod_RFIDNuevo').style.display = 'none';
+            }
+        }
+        function validarVigencia(){
+            debugger;
+            var Vigencia = $('#fevigencia').val();
+            if (Vigencia == "0001-01-01") {
+                $('#valvigencia').hide();
+            }
+            else {
+                document.getElementById('valvigencia').style.display = 'none';
+            }
+        }
+        function ExsistePlaca(ID_REGI_PLAC_) {
+            debugger;
+            var Rpta = false;
+            var record = {
+                ID_REGI_PLAC: ID_REGI_PLAC_
+            };
+            $.ajax({
+                url: '@Url.Action("Existe_Placa")',
+                async: false,
+                type: 'Get',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (result) {
+                    var Error = result;
+                    if (Error) {
+                        Rpta = true;
+                    }
+                },
+                error: function (data) {
+                    Rpta=false;
+                }
+            });
+            return Rpta;
+        }
+        function ExisteCod_RFID(Cod_RFID_, ID_REGI_PLAC_) {
+            debugger;
+            var Rpta = false;
+            var record = {
+                Cod_RFID: Cod_RFID_,
+                ID_REGI_PLAC: ID_REGI_PLAC_
+            };
+            $.ajax({
+                url: '@Url.Action("ExisteCod_RFID")',
+                async: false,
+                type: 'Get',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (result) {
+                    var Error = result;
+                    Rpta = Error;
+                },
+                error: function (data) {
+                    Rpta="Error";
+                }
+            });
+            return Rpta;
+        }
+        function ActualizarRFID() 
+        { 
+            debugger;
+            var ID_REGI_PLAC_ = $('#txID_REGI_PLAC').val();
+            var Cod_RFID_ = $('#txCod_RFID').val();
+            var Cod_RFIDNuevo = $('#Cod_RFIDNuevo').val();
+            var FeVigencia_ = $('#fevigencia').val();
+            var Estado_ = $('#SelectEstado').val();
+            if (ID_REGI_PLAC_ != "" && Cod_RFID_ != "" && FeVigencia_ != "0001-01-01" && FeVigencia_ != "" && Cod_RFIDNuevo!="") {
+                var ExsistePlaca_ = ExsistePlaca(ID_REGI_PLAC_);
+                if (ExsistePlaca_) 
+                {
+                    var record = {
+                        ID_REGI_PLAC: ID_REGI_PLAC_,
+                        Cod_RFID: Cod_RFID_,
+                        Cod_RFIDN: Cod_RFIDNuevo,
+                        FeVigencia: FeVigencia_,
+                        Estado: Estado_
+                    };
+                    $.ajax({
+                        url: '@Url.Action("ActualizarTags")',
+                        async: false,
+                        type: 'Get',
+                        data: record,
+                        beforeSend: function (xhr, opts) { },
+                        success: function (result) 
+                        {
+                            var Error = result.error;
+                            //console.log(Error);
+                            if (!Error) {
+                                window.alert(Error);
+                                alert("Registro no Guardado");
+                            }
+                            else {
+
+                                document.getElementById('txID_REGI_PLAC').value = "";
+                                document.getElementById('txCod_RFID').value = "";
+                                document.getElementById('Cod_RFIDNuevo').value = "";
+                                document.getElementById('fevigencia').value = Fecha();
+                                document.getElementById('SelectEstado').value = 0;
+                                Mostrar_Panel_Grabado();
+                            }
+                        },
+                        error: function (data) {
+                            window.alert('Error en el grabado');
+                        }
+                    });
+                }
+                else {
+                    alert("Nro de placa no registrado en el sistema");
+                    $('#txID_REGI_PLAC').focus();
+                }
+            }
+            else 
+            {
+                $('#Cod_RFIDNuevo').focus();
+                if (ID_REGI_PLAC_ == "") {
+                    $('#valID_REGI_PLAC').show();
+                }
+                if (Cod_RFID_ == "") {
+                    $('#valCod_RFID').show();
+                }
+                if (FeVigencia_ == "0001-01-01" && FeVigencia_ == "") {
+                    debugger;
+                    $('#valvigencia').show();
+                }
+                if (Cod_RFIDNuevo == "") {
+                    debugger;
+                    $('#valCod_RFIDNuevo').show();
+                }
+            }
+        }
+        function Grabar()
+        {
+            debugger;
+            var ID_REGI_PLAC_ = $('#txID_REGI_PLAC').val();
+            var Cod_RFID_ = $('#txCod_RFID').val();
+            var FeVigencia_ = $('#fevigencia').val();
+            var Estado_ = $('#SelectEstado').val();
+            if (ID_REGI_PLAC_ != "" && Cod_RFID_ != "" && FeVigencia_ != "0001-01-01" && FeVigencia_!="") 
+            {             
+                var ExsistePlaca_ = ExsistePlaca(ID_REGI_PLAC_);
+                if (ExsistePlaca_)
+                {
+                    var ExisteCod_RFID_ = ExisteCod_RFID(Cod_RFID_,ID_REGI_PLAC_);
+                    if (ExisteCod_RFID_ == "Actualizar" || ExisteCod_RFID_ == "Insertar") {
+                        var record = new FormData();
+                        record.append("ID_REGI_PLAC", ID_REGI_PLAC_);
+                        record.append("Cod_RFID", Cod_RFID_);
+                        record.append("Vigencia", FeVigencia_);
+                        record.append("DateNew", "");
+                        record.append("DateEdit", "");
+                        record.append("UserNew", "");
+                        record.append("UserEdit", "");
+                        record.append("Estado", Estado_);
+
+                        $.ajax({
+                            type: "POST",
+                            url: '@Url.Action("Grabar")',
+                            data: record,
+                            contentType: "application/json; charset=utf-8",
+                            dataType: "json",
+                            cache: false,
+                            contentType: false,
+                            processData: false,
+                            success: function (result) {
+                                var Error = result.error;
+                                //console.log(Error);
+                                if (!Error) {
+                                    window.alert(Error);
+                                    alert("Registro no Guardado");
+                                }
+                                else {
+
+                                    document.getElementById('txID_REGI_PLAC').value = "";
+                                    document.getElementById('txCod_RFID').value = "";
+                                    document.getElementById('fevigencia').value = Fecha();
+                                    document.getElementById('SelectEstado').value = 0;
+                                    Mostrar_Panel_Grabado();
+                                }
+                            },
+                            error: function (data) {
+                                window.alert('Error en el grabado');
+                            }
+                        });
+                    }
+                    else if (ExisteCod_RFID_ == "Registrado") {
+                        alert("Placa asignado a otro RFID");
+                        $('#txCod_RFID').focus();
+                    }
+                    else if (ExisteCod_RFID_ == "Not") {
+                        alert("Nro de placa no registrado en el sistema");
+                        $('#txID_REGI_PLAC').focus();
+                    }
+                }
+                else
+                {
+                    alert("Nro de placa no registrado en el sistema");
+                    $('#txID_REGI_PLAC').focus();
+                }
+            }
+            else
+            {
+                $('#txID_REGI_PLAC').focus();
+                if (ID_REGI_PLAC_ == "") {
+                    $('#valID_REGI_PLAC').show();
+                }
+                if (Cod_RFID_ == "") {
+                    $('#valCod_RFID').show();
+                }
+                if (FeVigencia_ == "0001-01-01" && FeVigencia_ == "") {
+                    debugger;
+                    $('#valvigencia').show();
+                }
+            }
+        }
+        function Buscar() {
+            debugger;
+            var ID_REGI_PLAC_ = $('#id_REGI_PLAC').val();
+            var Cod_RFID_ = $('#Cod_RFID').val();
+            var VigenciaIni_ = $('#vigenciaIni').val(); 
+            var VigenciaFin_ = $('#vigenciaFin').val();
+            var record = {
+                ID_REGI_PLAC: ID_REGI_PLAC_,
+                Cod_RFID: Cod_RFID_,
+                VigenciaIni: VigenciaIni_,
+                VigenciaFin: VigenciaFin_
+            };
+            $.ajax({
+                url: '@Url.Action("Buscar")',
+                async: false,
+                type: 'Get',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (data) {
+                    $('#taregirfid > tbody').empty();
+                    debugger;
+                    if (data.length>0)
+                    {
+                        for (var i = 0; i < data.length; i++) {
+                            var newRow =
+                                "<tr>" +
+                                "<td>" + data[i].iD_REGI_PLAC + "</td>" +
+                                "<td>" + data[i].cod_RFID + "</td>" +
+                                "<td>" + (data[i].vigencia.replace("T", " ")) + "</td>" +
+                                "<td>" +
+                                    "<button type='button' class='btn btn-primary' data-bs-toggle='modal' onclick='return Editar(\"" + data[i].cod_RFID + "\")'>Editar</button>" +
+                                 "</td>"
+                            "</tr>";
+                            $(newRow).appendTo("#taregirfid tbody");
+                        }
+                    }
+                    else
+                    {
+                        alert("No se encontro datos.");
+                    }
+                },
+                error: function (data) {
+                    window.alert(data.message);
+                }
+            });
+        }
+        function Editar(cod_RFID) {
+            debugger;
+            var record = {
+                Cod_RFID: cod_RFID
+            };
+            $.ajax({
+                url: '@Url.Action("Recuperar")',
+                async: false,
+                type: 'Get',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (data) {
+                    if (data.iD_REGI_PLAC != null) {
+                        debugger;
+                        var firstTab = document.getElementById("profile-tab");
+                        firstTab.click();
+                        document.getElementById('txID_REGI_PLAC').value = data.iD_REGI_PLAC;
+                        document.getElementById('txCod_RFID').value = data.cod_RFID;
+                        document.getElementById('fevigencia').value = Fecha_(data.vigencia);
+                        if (data.estado == "A") {
+                            document.getElementById('SelectEstado').value = 0;
+                        }
+                        else { 
+                            document.getElementById('SelectEstado').value = 1;
+                        }
+                        $('#nuevoCodRFID').show();
+                        $('#btnActualizar').show();
+                    }
+                    else {
+                        $('#nuevoCodRFID').hide();
+                        $('#btnActualizar').hide();
+                        alert("Datos no Recuperados");
+                    }
+                },
+                error: function (data) {
+                    window.alert(data.message);
+                }
+            });
+        }
+        function ModificarRFID(cod_RFID) {
+            debugger;
+            var record = {
+                Cod_RFID: cod_RFID
+            };
+            $.ajax({
+                url: '@Url.Action("Recuperar")',
+                async: false,
+                type: 'Get',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (data) {
+                    if (data.iD_REGI_PLAC != null) 
+                    {
+                        debugger;
+                        var firstTab = document.getElementById("profile-tab");
+                        firstTab.click();
+                        document.getElementById('txID_REGI_PLAC').value = data.iD_REGI_PLAC;
+                        document.getElementById('txCod_RFID').value = data.cod_RFID;
+                        document.getElementById('fevigencia').value = Fecha_(data.vigencia);
+                        if (data.estado == "A") 
+                        {
+                            document.getElementById('SelectEstado').value = 0;
+                        }
+                        else 
+                        {
+                            document.getElementById('SelectEstado').value = 1;
+                        }
+                    }
+                    else 
+                    {
+                        alert("Datos no Recuperados");
+                    }
+                },
+                error: function (data) {
+                    window.alert(data.message);
+                }
+            });
+        }
+        function FechaEntero(fecha)
+        {
+            debugger
+            var fechahoy=0;
+            var fecha_entero = Math.floor(fecha.getTime() / 1000);
+            return fecha_entero;
+        }
+        function ejecutaAlerta(Mensaje) {
+            var w = window.open('SisAutoBal', '_blank', 'toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=500,width=500,height=20')
+            w.document.write(Mensaje)
+            w.focus()
+            setTimeout(function () { w.close(); }, 5000)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121.
+-->
+<Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>D:\ZOE-BAl\Publicaciones\ServicioAPIBAL</_PublishTargetUrl>
+    <History>True|2024-09-09T02:28:14.8258213Z||;True|2024-09-07T19:41:05.9561481-05:00||;True|2024-09-07T19:38:50.2046970-05:00||;True|2024-09-05T12:30:22.0397155-05:00||;False|2024-09-05T12:29:58.9690869-05:00||;True|2024-09-05T11:19:39.8327680-05:00||;True|2024-08-28T08:48:48.9411867-05:00||;True|2024-08-26T11:01:40.9911136-05:00||;True|2024-08-22T09:35:48.1959659-05:00||;True|2024-08-22T09:20:04.4775854-05:00||;True|2024-08-22T08:56:43.1122360-05:00||;True|2024-08-21T16:02:48.9066113-05:00||;True|2024-08-21T15:52:40.3815484-05:00||;True|2024-08-21T15:46:02.7138301-05:00||;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
+</Project>

@@ -1,0 +1,503 @@
+﻿@using SisAutoZoe.BusinessObjects.Zoe;
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tipo de Operaciones</title>
+    <link rel="stylesheet" href="~/css/TableEstilo.css" />
+</head>
+    <body>
+        <div class="pagetitle">
+        <h1>Tipo de Operaciones</h1>
+        </div>
+        <section class="section">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card" style="padding: 0 0px 0px 0px;">
+                        <div class="card-body" style="padding: 0 0px 0px 0px;">
+                            <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#bordered-home" type="button" role="tab" aria-controls="home" aria-selected="true">Busqueda</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bordered-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Nuevo</button>
+                                </li>
+                            </ul>
+                            <div class="tab-content pt-2" id="borderedTabContent">
+                                <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="row">
+                                    <div class="container-fluid">
+                                        <div class="card card-default">
+                                            <div class="card-body">
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label>Cod. Tipo de Operaciones</label>
+                                                            <input type="text" placeholder="Cod. Tipo de Operaciones" class="form-control" id="Cod_TipoOper" name="Cod_TipoOper">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Nom. Tipo Operacion</label>
+                                                            <input type="text" placeholder="Nom. Tipo Operacion" class="form-control" id="Nom_TipoOper" name="Nom_TipoOper" style="width:100%;">
+                                                        </div>
+                                                    </div>
+                                                </div>                                               
+                                                <br />
+                                                <div class="row">
+                                                    <div class="text-center">
+                                                        <button class="btn btn-primary" id="btBuscar" type="button" onclick="return Buscar()">
+                                                            <span>Buscar</span>
+                                                            <img src="~/img/share.png" width="20" height="20" alt="" />
+                                                        </button>
+                                                        <button class="btn btn-warning" type="submit" onclick="return CancelarBus()">
+                                                            <span>Cancelar</span>
+                                                            <img src="~/img/cancelar.png" width="20" height="20" alt="" />
+                                                        </button>
+                                                        <button class="btn btn-info" type="submit" onclick="return Nuevo()">
+                                                            <span>Nuevo</span>
+                                                            <img src="~/img/new.png" width="20" height="20" alt="" />
+                                                        </button>
+
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="table">
+                                                            <div class="table_section" style="height: 100%">
+                                                                <div class="table_header">
+                                                                    <h5>Tipo de Operaciones</h5>
+                                                                </div>
+                                                                <table id="taTipoOperaciones" class="table" aria-describedby="Lista Tipo de Operaciones">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th scope="col">Cod. Tipo Operaciones</th>
+                                                                            <th scope="col">Nom. TipoOper</th>
+                                                                            <th scope="col">Min. IngrZonaEsp</th>
+                                                                            <th scope="col">Min. SaliZonaEsp</th>
+                                                                            <th scope="col">Min. IngrManteo</th>
+                                                                            <th scope="col">Min. SaliManteo</th>
+                                                                            <th scope="col">Min. MaxEfectivoAten</th>
+                                                                            <th scope="col">...</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="bordered-profile" role="tabpanel" aria-labelledby="profile-tab">
+                                    <div class="row">
+                                    <div class="container-fluid">
+                                        <div class="card card-default">
+                                            <div class="card-body">
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label>Cod. Tipo de Operaciones</label>
+                                                            <input type="text" placeholder="Cod. Tipo de Operaciones" class="form-control" id="txCod_TipoOper" name="txCod_TipoOper" onclick="return validarCod_TipoOper()">
+                                                            <span class="label" id="valCod_TipoOper" style="display:none; font-size:12px; color:red">Ingrese Cod. Tipo de Operaciones</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label>Nom. Tipo Operacion</label>
+                                                            <input type="text" placeholder="Nom. Tipo Operacion" class="form-control" id="txNom_TipoOper" name="txNom_TipoOper" style="width:100%;" onclick="return validarNom_TipoOper()">
+                                                            <span class="label" id="valNom_TipoOper" style="display:none; font-size:12px; color:red">Ingrese Nom. Tipo Operacion</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label>Min. IngrZonaEsp</label>
+                                                            <input type="text" placeholder="Min. IngrZonaEsp" class="form-control" id="txMin_IngrZonaEsp" name="txMin_IngrZonaEsp" onclick="return validarMin_IngrZonaEsp()" oninput="validateNumberInput(event)">
+                                                            <span class="label" id="valMin_IngrZonaEsp" style="display:none; font-size:12px; color:red">Ingrese Min. IngrZonaEsp</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row">                                                    
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label>Min. SaliZonaEsp</label>
+                                                            <input type="text" placeholder="Min. SaliZonaEsp" class="form-control" id="txMin_SaliZonaEsp" name="txMin_SaliZonaEsp" style="width:100%;" onclick="return validarMin_SaliZonaEsp()" oninput="validateNumberInput(event)">
+                                                            <span class="label" id="valMin_SaliZonaEsp" style="display:none; font-size:12px; color:red">Ingrese Min. SaliZonaEsp</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label>Min. IngrManteo</label>
+                                                            <input type="text" placeholder="Min. IngrManteo" class="form-control" id="txMin_IngrManteo" name="txMin_IngrManteo" onclick="return validarMin_IngrManteo()" oninput="validateNumberInput(event)">
+                                                            <span class="label" id="valMin_IngrManteo" style="display:none; font-size:12px; color:red">Ingrese Min. IngrManteo</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label>Min.SaliManteo</label>
+                                                            <input type="text" placeholder="Min. SaliManteo" class="form-control" id="txMin_SaliManteo" name="txMin_SaliManteo" style="width:100%;" onclick="return validarMin_SaliManteo()" oninput="validateNumberInput(event)">
+                                                            <span class="label" id="valMin_SaliManteo" style="display:none; font-size:12px; color:red">Ingrese Min.SaliManteo</span>
+                                                        </div>
+                                                    </div>                                                
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label>Min. MaxEfectivoAten</label>
+                                                            <input type="text" placeholder="Min. SaliManteo" class="form-control" id="txMin_MaxEfectivoAten" name="txMin_MaxEfectivoAten" style="width:100%;" onclick="return validarMin_MaxEfectivoAten()" oninput="validateNumberInput(event)">
+                                                            <span class="label" id="valMin_MaxEfectivoAten" style="display:none; font-size:12px; color:red">Ingrese Min. MaxEfectivoAten</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row">
+                                                    <div class=" text-center">
+                                                        <div>
+                                                            <button id="btGuardar" class="btn btn-success" title="Guardar" onclick="Grabar()">
+                                                                <span>Guardar Nuevo</span>
+                                                                <img src="~/img/save.png" width="20" height="20" alt="" />
+                                                            </button>
+                                                            <button class="btn btn-warning" type="submit" onclick="return Cancelar()">
+                                                                <span>Cancelar</span>
+                                                                <img src="~/img/cancelar.png" width="20" height="20" alt="" />
+                                                            </button>
+                                                            <button class="btn btn-primary" type="submit" onclick="return Atras()">
+                                                                <span>Atras</span>
+                                                                <img src="~/img/undo.png" width="20" height="20" alt="" />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="Grabado" tabindex="-1">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">Datos Guardados</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="return closePopup()"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="card">
+                                                <div class="card-body" style="padding: 0 0px 0px 0px;">
+                                                    <h2><label>Registro exitoso.</label></h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="return closePopup()">Cerrar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+        function Nuevo() {
+            Cancelar();
+            var firstTab = document.getElementById("profile-tab");
+            firstTab.click();        
+        }
+        function Atras() {
+            CancelarBus();
+            var firstTab = document.getElementById("home-tab");
+            firstTab.click();
+        }
+        function Mostrar_Panel_Grabado() {
+            debugger;
+            $("#Grabado").modal("show");
+        }
+        function closePopup() {
+            debugger;
+            $("#Grabado").modal("hide");
+        }
+        function validarCod_TipoOper() {
+            debugger;
+            var Cod_TipoOper = $('#txCod_TipoOper').val();
+            if (Cod_TipoOper == "") {
+                $('#valCod_TipoOper').hide();
+            }
+            else {
+                document.getElementById('valCod_TipoOper').style.display = 'none';
+            }
+        }
+        function validarNom_TipoOper() {
+            debugger;
+            var Nom_TipoOper = $('#txNom_TipoOper').val()
+            if (Nom_TipoOper == "") {
+                $('#valNom_TipoOper').hide();
+            }
+            else {
+                document.getElementById('valNom_TipoOper').style.display = 'none';
+            }
+        }
+        function validarMin_IngrZonaEsp() {
+            debugger;
+            var Min_IngrZonaEsp = $('#txMin_IngrZonaEsp').val()
+            if (Min_IngrZonaEsp == "") {
+                $('#valMin_IngrZonaEsp').hide();
+            }
+            else {
+                document.getElementById('valMin_IngrZonaEsp').style.display = 'none';
+            }
+        }
+        function validarMin_SaliZonaEsp() {
+            debugger;
+            var Min_SaliZonaEsp = $('#txMin_SaliZonaEsp').val()
+            if (Min_SaliZonaEsp == "") {
+                $('#valMin_SaliZonaEsp').hide();
+            }
+            else {
+                document.getElementById('valMin_SaliZonaEsp').style.display = 'none';
+            }
+        }
+        function validarMin_IngrManteo() {
+            debugger;
+            var Min_IngrManteo = $('#txMin_IngrManteo').val()
+            if (Min_IngrManteo == "") {
+                $('#valMin_IngrManteo').hide();
+            }
+            else {
+                document.getElementById('valMin_IngrManteo').style.display = 'none';
+            }
+        }
+        function validarMin_SaliManteo() {
+            debugger;
+            var Min_SaliManteo = $('#txMin_SaliManteo').val()
+            if (Min_SaliManteo == "") {
+                $('#valMin_SaliManteo').hide();
+            }
+            else {
+                document.getElementById('valMin_SaliManteo').style.display = 'none';
+            }
+        }
+        function validarMin_MaxEfectivoAten() {
+            debugger;
+            var Min_MaxEfectivoAten = $('#txMin_MaxEfectivoAten').val()
+                    if (Min_MaxEfectivoAten == "") {
+                $('#valMin_MaxEfectivoAten').hide();
+            }
+            else {
+                document.getElementById('valMin_MaxEfectivoAten').style.display = 'none';
+            }
+        }
+
+        function CancelarBus() {
+            debugger;
+            var tabla = document.getElementById('taTipoOperaciones');
+            $('#taTipoOperaciones > tbody').empty();
+            // Eliminar todas las filas excepto la primera (encabezados)
+            if (tabla.rows.length > 1) {
+                for (var i = 1; i <= tabla.rows.length; i++) {
+                    tabla.deleteRow(i);
+                }
+            }
+            document.getElementById('Cod_TipoOper').value = "";
+            document.getElementById('Nom_TipoOper').value = "";
+        }
+        function Cancelar() {
+            document.getElementById('valCod_TipoOper').style.display = 'none';
+            document.getElementById('valNom_TipoOper').style.display = 'none';
+            document.getElementById('valMin_IngrZonaEsp').style.display = 'none';
+            document.getElementById('valMin_SaliZonaEsp').style.display = 'none';
+            document.getElementById('valMin_IngrManteo').style.display = 'none';
+            document.getElementById('valMin_SaliManteo').style.display = 'none'; 
+            document.getElementById('valMin_MaxEfectivoAten').style.display = 'none';
+            document.getElementById('txCod_TipoOper').value = "";
+            document.getElementById('txNom_TipoOper').value = "";
+            document.getElementById('txMin_IngrZonaEsp').value = "";
+            document.getElementById('txMin_SaliZonaEsp').value = "";
+            document.getElementById('txMin_IngrManteo').value = "";
+            document.getElementById('txMin_SaliManteo').value = "";
+            document.getElementById('txMin_MaxEfectivoAten').value = "";
+        }
+
+        function Grabar() {
+            debugger;
+            var Cod_TipoOper_ = $('#txCod_TipoOper').val();
+            var Nom_TipoOper_ = $('#txNom_TipoOper').val();
+            var Min_IngrZonaEsp_ = $('#txMin_IngrZonaEsp').val();
+            var Min_SaliZonaEsp_ = $('#txMin_SaliZonaEsp').val();
+            var Min_IngrManteo_ = $('#txMin_IngrManteo').val();
+            var Min_SaliManteo_ = $('#txMin_SaliManteo').val(); 
+            var Min_MaxEfectivoAten_ = $('#txMin_MaxEfectivoAten').val();
+            if (Cod_TipoOper_ != "" && Nom_TipoOper_ != "" && Min_IngrZonaEsp_ != "" && Min_SaliZonaEsp_ != "" && Min_IngrManteo_ != "" && Min_SaliManteo_ != "" && Min_MaxEfectivoAten_ != "") {
+                var record = new FormData();
+                record.append("Cod_TipoOper", $('#txCod_TipoOper').val());
+                record.append("Nom_TipoOper", $('#txNom_TipoOper').val());
+                record.append("Min_IngrZonaEsp", $('#txMin_IngrZonaEsp').val());
+                record.append("Min_SaliZonaEsp", $('#txMin_SaliZonaEsp').val());
+                record.append("Min_IngrManteo", $('#txMin_IngrManteo').val());
+                record.append("Min_SaliManteo", $('#txMin_SaliManteo').val());
+                record.append("Min_MaxEfectivoAten", $('#txMin_MaxEfectivoAten').val());
+
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("Grabar")',
+                    data: record,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    success: function (result) {
+                        var Error = result.error;
+                        //console.log(Error);
+                        if (!Error) {
+                            window.alert(Error);
+                            alert("Registro no Guardado");
+                        }
+                        else {
+                            document.getElementById('valCod_TipoOper').style.display = 'none';
+                            document.getElementById('valNom_TipoOper').style.display = 'none';
+                            document.getElementById('valMin_IngrZonaEsp').style.display = 'none';
+                            document.getElementById('valMin_SaliZonaEsp').style.display = 'none';
+                            document.getElementById('valMin_IngrManteo').style.display = 'none';
+                            document.getElementById('valMin_SaliManteo').style.display = 'none';
+                            document.getElementById('valMin_MaxEfectivoAten').style.display = 'none';
+                            document.getElementById('txCod_TipoOper').value = "";
+                            document.getElementById('txNom_TipoOper').value = "";
+                            document.getElementById('txMin_IngrZonaEsp').value = "";
+                            document.getElementById('txMin_SaliZonaEsp').value = "";
+                            document.getElementById('txMin_IngrManteo').value = "";
+                            document.getElementById('txMin_SaliManteo').value = "";
+                            document.getElementById('txMin_MaxEfectivoAten').value = "";
+                            Mostrar_Panel_Grabado();
+                        }
+                    },
+                    error: function (data) {
+                        window.alert('Error en el grabado');
+                    }
+                });
+            }
+            else {
+                $('#txCod_TipoOper').focus();
+                if (Cod_TipoOper_ == "") {
+                    $('#valCod_TipoOper').show();
+                }
+                if (Nom_TipoOper_ == "") {
+                    $('#valNom_TipoOper').show();
+                }
+                if (Min_IngrZonaEsp_ == "") {
+                    $('#valMin_IngrZonaEsp').show();
+                }
+                if (Min_SaliZonaEsp_ == "") {
+                    $('#valMin_SaliZonaEsp').show();
+                }
+                if (Min_IngrManteo_ == "") {
+                    $('#valMin_IngrManteo').show();
+                }
+                if (Min_SaliManteo_ == "") {
+                    $('#valMin_SaliManteo').show();
+                }
+                if (Min_MaxEfectivoAten_ == "") {
+                    $('#valMin_MaxEfectivoAten').show();
+                }
+            }
+        }
+        function Buscar() {
+            debugger;
+            var record = {
+                Cod_TipoOper: $('#Cod_TipoOper').val(),
+                Nom_TipoOper: $('#Nom_TipoOper').val()
+            }
+            $.ajax({
+                url: '@Url.Action("Buscar")',
+                async: false,
+                type: 'GET',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (data) {
+                    $('#taTipoOperaciones > tbody').empty();
+                    debugger;
+                    if (data.length > 0) {
+                        for (var i = 0; i < data.length; i++) {
+                            var newRow =
+                                "<tr>" +
+                                "<td>" + data[i].cod_TipoOper + "</td>" +
+                                "<td>" + data[i].nom_TipoOper + "</td>" +
+                                "<td>" + data[i].min_IngrZonaEsp + "</td>" +
+                                "<td>" + data[i].min_SaliZonaEsp + "</td>" +
+                                "<td>" + data[i].min_IngrManteo + "</td>" +
+                                "<td>" + data[i].min_SaliManteo + "</td>" +
+                                "<td>" + data[i].min_MaxEfectivoAten + "</td>" +
+                                "<td>" +
+                                "<button type='button' class='btn btn-primary' data-bs-toggle='modal' onclick='return Editar(\"" + data[i].cod_TipoOper + "\")'>Editar</button>" +
+                                "</td>"
+                            "</tr>";
+                            $(newRow).appendTo("#taTipoOperaciones tbody");
+                        }
+                    }
+                    else {
+                        alert("No se encontro datos.");
+                    }
+                },
+                error: function (data) {
+                    window.alert(data.message);
+                }
+            });
+        }
+        function Editar(cod_TipoOper) {
+            debugger;
+            Cancelar();
+            var record = {
+                Cod_TipoOper: cod_TipoOper
+            };
+            $.ajax({
+                url: '@Url.Action("Recuperar")',
+                async: false,
+                type: 'GET',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (data) {
+                    if (data.cod_TipoOper != null) {
+                        debugger;
+                        var firstTab = document.getElementById("profile-tab");
+                        firstTab.click();
+                        document.getElementById('txCod_TipoOper').value = data.cod_TipoOper;
+                        document.getElementById('txNom_TipoOper').value = data.nom_TipoOper;
+                        document.getElementById('txMin_IngrZonaEsp').value = data.min_IngrZonaEsp;
+                        document.getElementById('txMin_SaliZonaEsp').value = data.min_SaliZonaEsp;
+                        document.getElementById('txMin_IngrManteo').value = data.min_IngrManteo;
+                        document.getElementById('txMin_SaliManteo').value = data.min_SaliManteo;
+                        document.getElementById('txMin_MaxEfectivoAten').value = data.min_MaxEfectivoAten;
+                    }
+                    else {
+                        alert("Datos no Recuperados");
+                    }
+                },
+                error: function (data) {
+                    window.alert(data.message);
+                }
+            });
+        }
+        function ejecutaAlerta(Mensaje) {
+            var w = window.open('SisAutBal', '_blank', 'toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=500,width=500,height=20')
+            w.document.write(Mensaje)
+            w.focus()
+            setTimeout(function () { w.close(); }, 5000)
+        }
+        function validateNumberInput(event) {
+            var input = event.target;
+            // Elimina cualquier carácter que no sea un número
+            input.value = input.value.replace(/[^0-9]/g, '');
+        }
+        </script>
+    </body>
+</html>

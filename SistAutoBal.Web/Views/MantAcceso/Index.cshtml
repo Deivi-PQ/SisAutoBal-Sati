@@ -1,0 +1,499 @@
+﻿@using SisAutoBal.BusinessObjects.AutoBal;
+@{
+    ViewData["Title"] = "Accseso";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Accseso</title>
+    <link rel="stylesheet" href="~/css/TableEstilo.css" />
+</head>
+<body>
+    <div class="pagetitle">
+        <h1>Accseso</h1>
+    </div>
+    <section class="section">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card" style="padding: 0 0px 0px 0px;">
+                    <div class="card-body" style="padding: 0 0px 0px 0px;">
+                        <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#bordered-home" type="button" role="tab" aria-controls="home" aria-selected="true">Busqueda</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bordered-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Nuevo</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content pt-2" id="borderedTabContent">
+                            <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="row">
+                                    <div class="container-fluid">
+                                        <div class="card card-default">
+                                            <div class="card-body">
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-md-3">
+                                                        <div class="form-group">
+                                                            <label>Codigo de Acceso</label>
+                                                            <input type="text" placeholder="Codigo de Acceso" class="form-control" id="Cod_Acceso" name="Cod_Acceso">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Nombre de Acceso</label>
+                                                            <input type="text" placeholder="Nombre de Acceso" class="form-control" id="Nombre_Acceso" name="Nombre_Acceso" style="width:100%;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Descripcion</label>
+                                                            <input type="text" placeholder="Descripcion" class="form-control" id="Descripcion" name="Descripcion" style="width:100%;">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row">
+                                                    <div class="text-center">
+                                                        <button class="btn btn-primary" id="btBuscar" type="button" onclick="return Buscar()">
+                                                            <span>Buscar</span>
+                                                            <img src="~/img/share.png" width="20" height="20" alt="" />
+                                                        </button>
+                                                        <button class="btn btn-warning" type="submit" onclick="return CancelarBus()">
+                                                            <span>Cancelar</span>
+                                                            <img src="~/img/cancelar.png" width="20" height="20" alt="" />
+                                                        </button>
+                                                        <button class="btn btn-info" type="submit" onclick="return Nuevo()">
+                                                            <span>Nuevo</span>
+                                                            <img src="~/img/new.png" width="20" height="20" alt="" />
+                                                        </button>
+
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="table">
+                                                            <div class="table_section" style="height: 100%">
+                                                                <div class="table_header">
+                                                                    <h5>Accesos</h5>
+                                                                </div>
+                                                                <table id="taAcceso" class="table" aria-describedby="Lista de Acceso">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th scope="col">Codigo Acceso</th>
+                                                                            <th scope="col">Codigo Sistema</th>
+                                                                            <th scope="col">Nombre Acceso</th>
+                                                                            <th scope="col">Descripcion</th>
+                                                                            <th scope="col">Comando</th>
+                                                                            <th scope="col">Nivel</th>
+                                                                            <th scope="col">Estado</th>
+                                                                            <th scope="col">...</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="bordered-profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="row">
+                                    <div class="container-fluid">
+                                        <div class="card card-default">
+                                            <div class="card-body">
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label>Codigo de Acceso</label>
+                                                            <input type="text" placeholder="Codigo de Acceso" class="form-control" id="txCod_Acceso" name="txCod_Acceso" onclick="return validarCod_Acceso()" oninput="validateNumberInput(event)">
+                                                            <span class="label" id="valCod_Acceso" style="display:none; font-size:12px; color:red">Ingrese Codigo de Acceso</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label>Codigo de Sistema</label>
+                                                            <select class="form-select" id="txCod_Sistema" name="txCod_Sistema" style="width: 100%;background-color:khaki" onclick="return validarCod_Sistema()">
+                                                                <option value="todo">Seleccione</option>
+                                                                <option value="ZOE">ZOE</option>
+                                                                <option value="BAL">BALANZA</option>
+                                                            </select>
+                                                            <span class="label" id="valCod_Sistema" style="display:none; font-size:12px; color:red">Ingrese Codigo de Sistema</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Nombre de Accseo</label>
+                                                            <input type="text" placeholder="Nombre de Accseo" class="form-control" id="txNombre_Acceso" name="txNombre_Acceso" style="width:100%;" onclick="return validarNombre_Acceso()">
+                                                            <span class="label" id="valNombre_Acceso" style="display:none; font-size:12px; color:red">Ingrese Nombre de Accseo</span>
+                                                        </div>
+                                                    </div> 
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label>Nivel</label>
+                                                            <input type="text" placeholder="Nivel" class="form-control" id="txNivel" name="txNivel" onclick="return validarNivel()" oninput="validateNumberInput(event)">
+                                                            <span class="label" id="valNivel" style="display:none; font-size:12px; color:red">Ingrese Nivel</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row"> 
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Descripcion</label>
+                                                            <input type="text" placeholder="Descripcion" class="form-control" id="txDescripcion" name="txDescripcion" onclick="return validarDescripcion()">
+                                                            <span class="label" id="valDescripcion" style="display:none; font-size:12px; color:red">Ingrese Descripcion</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Comando</label>
+                                                            <input type="text" placeholder="Comando" class="form-control" id="txComando" name="txComando" style="width:100%;">
+                                                            <span class="label" id="valComando" style="display:none; font-size:12px; color:red">Ingrese Comando</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label>Estado</label>
+                                                            <select class="form-select" id="txEstado" name="txEstado" style="width: 100%;background-color:khaki">
+                                                                <option value="A">Activo</option>
+                                                                <option value="X">Inactivo</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row">
+                                                    <div class=" text-center">
+                                                        <div>
+                                                            <button id="btGuardar" class="btn btn-success" title="Guardar" onclick="Grabar()">
+                                                                <span>Guardar Nuevo</span>
+                                                                <img src="~/img/save.png" width="20" height="20" alt="" />
+                                                            </button>
+                                                            <button class="btn btn-warning" type="submit" onclick="return Cancelar()">
+                                                                <span>Cancelar</span>
+                                                                <img src="~/img/cancelar.png" width="20" height="20" alt="" />
+                                                            </button>
+                                                            <button class="btn btn-primary" type="submit" onclick="return Atras()">
+                                                                <span>Atras</span>
+                                                                <img src="~/img/undo.png" width="20" height="20" alt="" />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="Grabado" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Datos Guardados</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="return closePopup()"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card">
+                                            <div class="card-body" style="padding: 0 0px 0px 0px;">
+                                                <h2><label>Registro exitoso.</label></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="return closePopup()">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        function Nuevo() {
+            Cancelar();
+            var firstTab = document.getElementById("profile-tab");
+            firstTab.click();
+        }
+        function Atras() {
+            CancelarBus();
+            var firstTab = document.getElementById("home-tab");
+            firstTab.click();
+        }
+        function Mostrar_Panel_Grabado() {
+            debugger;
+            $("#Grabado").modal("show");
+        }
+        function closePopup() {
+            debugger;
+            $("#Grabado").modal("hide");
+        } 
+        function validarCod_Acceso() {
+            debugger;
+            var Cod_Acceso = $('#txCod_Acceso').val();
+            if (Cod_Acceso == "") {
+                $('#valCod_Acceso').hide();
+            }
+            else {
+                document.getElementById('valCod_Acceso').style.display = 'none';
+            }
+        }
+        function validarCod_Sistema() {
+            debugger;
+            var Cod_Sistema = $('#txCod_Sistema').val();
+            if (Cod_Sistema == "Ttodo") {
+                $('#valCod_Sistema').hide();
+            }
+            else {
+                document.getElementById('valCod_Sistema').style.display = 'none';
+            }
+        }
+        function validarNombre_Acceso() {
+            debugger;
+            var Nombre_Acceso = $('#txNombre_Acceso').val()
+            if (Nombre_Acceso == "") {
+                $('#valNombre_Acceso').hide();
+            }
+            else {
+                document.getElementById('valNombre_Acceso').style.display = 'none';
+            }
+        }
+        function validarDescripcion() {
+            debugger;
+            var Descripcion = $('#txDescripcion').val()
+            if (Descripcion == "") {
+                $('#valDescripcion').hide();
+            }
+            else {
+                document.getElementById('valDescripcion').style.display = 'none';
+            }
+        }
+        function validarComando() {
+            debugger;
+            var Comando = $('#txComando').val()
+            if (Comando == "") {
+                $('#valComando').hide();
+            }
+            else {
+                document.getElementById('valComando').style.display = 'none';
+            }
+        }
+        function validarNivel() {
+            debugger;
+            var Nivel = $('#txNivel').val()
+            if (Nivel == "") {
+                $('#valNivel').hide();
+            }
+            else {
+                document.getElementById('valNivel').style.display = 'none';
+            }
+        }
+
+        function CancelarBus() {
+            debugger;
+            var tabla = document.getElementById('taAcceso');
+            $('#taAcceso > tbody').empty();
+            // Eliminar todas las filas excepto la primera (encabezados)
+            if (tabla.rows.length > 1) {
+                for (var i = 1; i <= tabla.rows.length; i++) {
+                    tabla.deleteRow(i);
+                }
+            }
+            document.getElementById('Cod_Acceso').value = "";
+            document.getElementById('Nombre_Acceso').value = "";
+            document.getElementById('Descripcion').value = "";
+        }
+        function Cancelar() {
+            document.getElementById('valCod_Acceso').style.display = 'none';
+            document.getElementById('valNombre_Acceso').style.display = 'none';
+            document.getElementById('valDescripcion').style.display = 'none';
+            document.getElementById('valComando').style.display = 'none';
+            document.getElementById('valNivel').style.display = 'none'; 
+            document.getElementById('valCod_Sistema').style.display = 'none';
+            document.getElementById('txCod_Acceso').value = "";
+            document.getElementById('txNombre_Acceso').value = "";
+            document.getElementById('txDescripcion').value = "";
+            document.getElementById('txComando').value = "";
+            document.getElementById('txNivel').value = "";
+            document.getElementById('txEstado').value = "A";
+            document.getElementById('txCod_Sistema').value = "todo";
+        }
+
+        function Grabar() {
+            debugger;
+            var Cod_Acceso_ = $('#txCod_Acceso').val();
+            var Nombre_Acceso_ = $('#txNombre_Acceso').val();
+            var Cod_Sistema_ = $('#txCod_Sistema').val();
+            var Descripcion_ = $('#txDescripcion').val();
+            var Comando_ = $('#txComando').val();
+            var Nivel_ = $('#txNivel').val();
+            var Estado_ = $('#txEstado').val();
+            if (Cod_Acceso_ != "" && Cod_Sistema_ !== "todo" && Nombre_Acceso_ != "" && Descripcion_ != "" && Nivel_ != "" && Estado_ != "") {
+                var record = new FormData();
+                record.append("Cod_Acceso", $('#txCod_Acceso').val());
+                record.append("Nombre_Acceso", $('#txNombre_Acceso').val());
+                record.append("Descripcion", $('#txDescripcion').val());
+                record.append("Comando", $('#txComando').val());
+                record.append("Nivel", $('#txNivel').val());
+                record.append("Estado", $('#txEstado').val());
+                record.append("Cod_Sistema", $('#txCod_Sistema').val());
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("Grabar")',
+                    data: record,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    success: function (result) {
+                        var Error = result.error;
+                        //console.log(Error);
+                        if (!Error) {
+                            window.alert(Error);
+                            alert("Registro no Guardado");
+                        }
+                        else {
+                            document.getElementById('valCod_Acceso').style.display = 'none';
+                            document.getElementById('valCod_Sistema').style.display = 'none';
+                            document.getElementById('valNombre_Acceso').style.display = 'none';
+                            document.getElementById('valDescripcion').style.display = 'none';
+                            document.getElementById('valComando').style.display = 'none';
+                            document.getElementById('valNivel').style.display = 'none';
+                            document.getElementById('txCod_Acceso').value = "";
+                            document.getElementById('txNombre_Acceso').value = "";
+                            document.getElementById('txDescripcion').value = "";
+                            document.getElementById('txComando').value = "";
+                            document.getElementById('txNivel').value = "";
+                            document.getElementById('txEstado').value = "A"; 
+                            document.getElementById('txCod_Sistema').value = "todo";
+                            Mostrar_Panel_Grabado();
+                        }
+                    },
+                    error: function (data) {
+                        window.alert('Error en el grabado');
+                    }
+                });
+            }
+            else {
+                $('#txCod_Acceso').focus();
+                if (Cod_Acceso_ == "") {
+                    $('#valCod_Acceso').show();
+                }
+                if (Cod_Sistema_ == "todo") {
+                    $('#valCod_Sistema').show();
+                }
+                if (Nombre_Acceso_ == "") {
+                    $('#valNombre_Acceso').show();
+                }
+                if (Descripcion_ == "") {
+                    $('#valDescripcion').show();
+                }
+                if (Nivel_ == "") {
+                    $('#valNivel').show();
+                }
+            }
+        }
+
+        function Buscar() {
+            debugger;
+            var record = {
+                Cod_Acceso: $('#Cod_Acceso').val(),
+                Nombre_Acceso: $('#Nombre_Acceso').val(),
+                Descripcion: $('#Nombre_Acceso').val()
+            }
+            $.ajax({
+                url: '@Url.Action("Buscar")',
+                async: false,
+                type: 'GET',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (data) {
+                    $('#taAcceso > tbody').empty();
+                    debugger;
+                    if (data.length > 0) {
+                        for (var i = 0; i < data.length; i++) {
+                            var newRow =
+                                "<tr>" +
+                                "<td>" + data[i].cod_Acceso + "</td>" + 
+                                "<td>" + data[i].cod_Sistema + "</td>"+
+                                "<td>" + data[i].nombre_Acceso + "</td>" +
+                                "<td>" + data[i].descripcion + "</td>" +
+                                "<td>" + data[i].comando + "</td>" +
+                                "<td>" + data[i].nivel + "</td>" +
+                                "<td>" + (data[i].estado=="A"?"ACTIVO":INACTIVO) + "</td>" +
+                                "<td>" +
+                                "<button type='button' class='btn btn-primary' data-bs-toggle='modal' onclick='return Editar(\"" + data[i].cod_Acceso + "\")'>Editar</button>" +
+                                "</td>"
+                            "</tr>";
+                            $(newRow).appendTo("#taAcceso tbody");
+                        }
+                    }
+                    else {
+                        alert("No se encontro datos.");
+                    }
+                },
+                error: function (data) {
+                    window.alert(data.message);
+                }
+            });
+        } 
+        function Editar(cod_Acceso) {
+            debugger;
+            Cancelar();
+            var record = {
+                Cod_Acceso: cod_Acceso
+            };
+            $.ajax({
+                url: '@Url.Action("Recuperar")',
+                async: false,
+                type: 'GET',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (data) {
+                    if (data.cod_Acceso != null) {
+                        debugger;
+                        var firstTab = document.getElementById("profile-tab");
+                        firstTab.click();
+                        document.getElementById('txCod_Acceso').value = data.cod_Acceso; 
+                        document.getElementById('txCod_Sistema').value = (data.cod_Sistema).trim();
+                        document.getElementById('txNombre_Acceso').value = data.nombre_Acceso;
+                        document.getElementById('txDescripcion').value = data.descripcion;
+                        document.getElementById('txComando').value = data.comando;
+                        document.getElementById('txNivel').value = data.nivel;
+                        document.getElementById('txEstado').value = data.estado;
+                    }
+                    else {
+                        alert("Datos no Recuperados");
+                    }
+                },
+                error: function (data) {
+                    window.alert(data.message);
+                }
+            });
+        }
+        function ejecutaAlerta(Mensaje) {
+            var w = window.open('SisAutBal', '_blank', 'toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=500,width=500,height=20')
+            w.document.write(Mensaje)
+            w.focus()
+            setTimeout(function () { w.close(); }, 5000)
+        }
+        function validateNumberInput(event) {
+            var input = event.target;
+            // Elimina cualquier carácter que no sea un número
+            input.value = input.value.replace(/[^0-9]/g, '');
+        }
+    </script>
+</body>
+</html>

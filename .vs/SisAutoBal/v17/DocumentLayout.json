@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Proyecto Bal\\SisAutoBal\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{861E8A6B-D1D4-4804-953A-136C0F42770C}|SisAutoBal.DataObjects\\SisAutoBal.DataObjects.csproj|d:\\proyecto bal\\sisautobal\\sisautobal.dataobjects\\autobal\\configsisdao.gen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{861E8A6B-D1D4-4804-953A-136C0F42770C}|SisAutoBal.DataObjects\\SisAutoBal.DataObjects.csproj|solutionrelative:sisautobal.dataobjects\\autobal\\configsisdao.gen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC3BAAAD-083C-428A-871C-6BC2394FA7AA}|SisAutoBal.SDKWebApi\\SisAutoBal.SDKWebApi.csproj|d:\\proyecto bal\\sisautobal\\sisautobal.sdkwebapi\\controllers\\autobal\\configsiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC3BAAAD-083C-428A-871C-6BC2394FA7AA}|SisAutoBal.SDKWebApi\\SisAutoBal.SDKWebApi.csproj|solutionrelative:sisautobal.sdkwebapi\\controllers\\autobal\\configsiscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{207CEC95-1D83-49D1-BA15-23D8E297E52E}|SisAutoBal.Facade\\SisAutoBal.Facade.csproj|d:\\proyecto bal\\sisautobal\\sisautobal.facade\\autobal\\configsisfacade.gen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{207CEC95-1D83-49D1-BA15-23D8E297E52E}|SisAutoBal.Facade\\SisAutoBal.Facade.csproj|solutionrelative:sisautobal.facade\\autobal\\configsisfacade.gen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 464,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConfigSisDao.gen.cs",
+              "DocumentMoniker": "D:\\Proyecto Bal\\SisAutoBal\\SisAutoBal.DataObjects\\AutoBal\\ConfigSisDao.gen.cs",
+              "RelativeDocumentMoniker": "SisAutoBal.DataObjects\\AutoBal\\ConfigSisDao.gen.cs",
+              "ToolTip": "D:\\Proyecto Bal\\SisAutoBal\\SisAutoBal.DataObjects\\AutoBal\\ConfigSisDao.gen.cs",
+              "RelativeToolTip": "SisAutoBal.DataObjects\\AutoBal\\ConfigSisDao.gen.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:52:45.048Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ConfigSisController.cs",
+              "DocumentMoniker": "D:\\Proyecto Bal\\SisAutoBal\\SisAutoBal.SDKWebApi\\Controllers\\AutoBal\\ConfigSisController.cs",
+              "RelativeDocumentMoniker": "SisAutoBal.SDKWebApi\\Controllers\\AutoBal\\ConfigSisController.cs",
+              "ToolTip": "D:\\Proyecto Bal\\SisAutoBal\\SisAutoBal.SDKWebApi\\Controllers\\AutoBal\\ConfigSisController.cs",
+              "RelativeToolTip": "SisAutoBal.SDKWebApi\\Controllers\\AutoBal\\ConfigSisController.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAswBIAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:47:13.542Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ConfigSisFacade.gen.cs",
+              "DocumentMoniker": "D:\\Proyecto Bal\\SisAutoBal\\SisAutoBal.Facade\\AutoBal\\ConfigSisFacade.gen.cs",
+              "RelativeDocumentMoniker": "SisAutoBal.Facade\\AutoBal\\ConfigSisFacade.gen.cs",
+              "ToolTip": "D:\\Proyecto Bal\\SisAutoBal\\SisAutoBal.Facade\\AutoBal\\ConfigSisFacade.gen.cs",
+              "RelativeToolTip": "SisAutoBal.Facade\\AutoBal\\ConfigSisFacade.gen.cs",
+              "ViewState": "AQIAAFAAAAAAAAAAAAAswGkAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-08T12:36:56.935Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

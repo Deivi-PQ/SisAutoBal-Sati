@@ -1,0 +1,155 @@
+﻿@using SisAutoBal.BusinessObjects.AutoBal;
+@inject IHttpContextAccessor contxt;
+
+@{
+    ViewData["Title"] = "Apertura";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SisAutoBal - Apertura</title>
+    </head>
+    <body>
+        <div class="pagetitle">
+            <h1>Apertura de Barrera</h1>
+        </div>
+        <section class="section">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="row">
+                                <form class="row g-3">
+                                    <table class="table" id="TablaTipoBala" aria-describedby="Balzas Activas">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Nro.</th>
+                                                <th scope="col">ID BALA</th>
+                                                <th scope="col">DESCRIPCION TIPO</th>
+                                                <th scope="col">IP MAQU</th>
+                                                <th scope="col" align="center">Barrera de Entrada</th>
+                                                <th scope="col" align="center">Barrera de Salida</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody></tbody>
+                                    </table>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+            window.onload = function () {
+                debugger;
+                Lista();
+                var timer = setInterval(Lista,60000);
+            }
+            function Lista()
+            {
+                debugger;
+                var record = { Estado: 'S' };
+                var _SAL = "_SAL";
+                $.ajax({
+                    url: '/SignalR/Listar',
+                    async: false,
+                    type: 'Get',
+                    data: record,
+                    beforeSend: function (xhr, opts) { },
+                    success: function (data) {
+                        $('#TablaTipoBala > tbody').empty();
+                        for (var i = 0; data.length; i++) 
+                        {
+                            // --- Codigo Para Abrir Barrera 2
+                            var strTienebarrera2 = "<td>" +
+                                "<button type='button' class='btn btn-primary' onclick='return AperturaBarrera(\"" + data[i].iD_BALA + "\",\"" + _SAL + "\")'>Abrir</button>" +
+                                "<button type='button' class='btn btn-danger'  onclick='return CerrarBarrera(\"" + data[i].iD_BALA + "\",\"" + _SAL + "\")'>Cerrar</button>" +
+                                "</td>";
+
+                            if (data[i].indicador_ES == "")
+                                strTienebarrera2 = "<td></td>";
+
+                            let A = i + 1;
+                            var newRow =
+                                "<tr>" +
+                                "<td>" + A + "</td>" +
+                                "<td>" + data[i].iD_BALA + "</td>" +
+                                "<td>" + data[i].dE_TIPO + "</td>" +
+                                "<td>" + data[i].iP_MAQU + "</td>" +
+                                "<td>" +
+                                "<button type='button' class='btn btn-primary' onclick='return AperturaBarrera(\"" + data[i].iD_BALA + "\", \"\")'>Abrir</button>" +
+                                "<button type='button' class='btn btn-danger'  onclick='return CerrarBarrera(\"" + data[i].iD_BALA + "\", \"\")'>Cerrar</button>" +
+                                "</td>" +
+                                strTienebarrera2 +
+                                "</tr>";
+                            $(newRow).appendTo("#TablaTipoBala tbody");
+                        }
+                    },
+                    error: function (data) {
+                        alert("Error en la consulta")
+                    }
+                });
+            }
+
+            function AperturaBarrera(iD_BALA, flagES) {
+                debugger;
+                // --- Agregando motivo de aperura de barrera
+                let motivo_;
+                let person = prompt("Ingrese motivo de apertura de barrera:", "");
+                if (person == null || person == "") {
+                    motivo_ = "";
+                } else {
+                    motivo_ = person;
+                }
+                //document.getElementById("demo").innerHTML = motivo_;
+
+                if (motivo_ != "") {
+                    var record = {
+                        TBala: iD_BALA,
+                        Tipo: 'Open',
+                        Sentido: flagES,
+                        Mensaje: 'Open' + flagES,
+                        Motivo: motivo_
+                    };
+                    $.ajax({
+                        url: '@Url.Action("AperturaRemota")',
+                        async: false,
+                        type: 'Get',
+                        data: record,
+                        beforeSend: function (xhr, opts) { },
+                        success: function (data) {
+                        },
+                        error: function (data) {
+                            alert("Error en la consulta")
+                        }
+                    });
+                }
+            }
+            function CerrarBarrera(iD_BALA, flagES) 
+            {
+                debugger;
+                var record = {
+                    TBala: iD_BALA,
+                    Tipo: 'Close',
+                    Sentido:  flagES,
+                    Mensaje: 'Close' + flagES,
+                    Motivo:''
+                };
+                $.ajax({
+                    url: '@Url.Action("AperturaRemota")',
+                    async: false,
+                    type: 'Get',
+                    data: record,
+                    beforeSend: function (xhr, opts) { },
+                    success: function (data) {
+                    },
+                    error: function (data) {
+                        alert("Error en la consulta")
+                    }
+                });
+            }
+        </script>
+    </body>
+</html>

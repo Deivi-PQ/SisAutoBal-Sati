@@ -1,0 +1,548 @@
+﻿@using SisAutoBal.BusinessObjects.AutoBal;
+@{
+    ViewData["Title"] = "Inicio";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Usuario</title>
+    <link rel="stylesheet" href="~/css/TableEstilo.css" />
+</head>
+<body>
+    <div class="pagetitle">
+        <h1>Mantenimiento Usuario</h1>
+    </div>
+    <section class="section">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card" style="padding: 0 0px 0px 0px;">
+                    <div class="card-body" style="padding: 0 0px 0px 0px;">
+                        <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#bordered-home" type="button" role="tab" aria-controls="home" aria-selected="true">Busqueda</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bordered-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Nuevo</button>
+                            </li>
+                        </ul>
+                        <div class="tab-content pt-2" id="borderedTabContent">
+                            <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="row">
+                                    <div class="container-fluid">
+                                        <div class="card card-default">
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label>Codigo Usuario</label>
+                                                            <input type="text" placeholder="Codigo de Usuario" class="form-control" id="CodUsuario" name="CodUsuario">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Nombre Usuario</label>
+                                                            <input type="text" placeholder="Nombre de Acceso" class="form-control" id="Nombre_Usuario" name="Nombre_Usuario" style="width:100%;" onkeyup="javascript:this.value=this.value.toUpperCase();">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label>Perfil Usuario</label>
+                                                            <select class="form-select" id="IDPerfil" name="IDPerfil" style="width: 100%;background-color:khaki">
+                                                                <option value="todo">Seleccione</option>
+                                                                @{
+                                                                    if (ViewData["Perfil"] != null)
+                                                                    {
+                                                                        foreach (var item in ViewData["Perfil"] as IList<CPerfil>)
+                                                                        {
+                                                                                            <option value="@item.IDPerfil">@item.Des_Perfil</option>
+                                                                        }
+                                                                    }
+                                                                }
+                                                            </select>
+                                                            <span class="label" id="valIDPerfil" style="display:none; font-size:12px; color:red">Ingrese Mail</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row">
+                                                    <div class="text-center">
+                                                        <button class="btn btn-primary" id="btBuscar" type="button" onclick="return Buscar()">
+                                                            <span>Buscar</span>
+                                                            <img src="~/img/share.png" width="20" height="20" alt="" />
+                                                        </button>
+                                                        <button class="btn btn-warning" type="submit" onclick="return CancelarBus()">
+                                                            <span>Cancelar</span>
+                                                            <img src="~/img/cancelar.png" width="20" height="20" alt="" />
+                                                        </button>
+                                                        <button class="btn btn-info" type="submit" onclick="return Nuevo()">
+                                                            <span>Nuevo</span>
+                                                            <img src="~/img/new.png" width="20" height="20" alt="" />
+                                                        </button>
+
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-md-12">
+                                                        <div class="table">
+                                                            <div class="table_section" style="height: 100%">
+                                                                <div class="table_header">
+                                                                    <h5>Usuarios</h5>
+                                                                </div>
+                                                                <table id="taUsuario" class="table" aria-describedby="Lista de Usuarios">
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th scope="col">Codigo Usuario</th>
+                                                                            <th scope="col">Nombre Usuario</th>
+                                                                            <th scope="col">Login Dominio</th>
+                                                                            <th scope="col">Estado</th>
+                                                                            <th scope="col">Perfil Usuario</th>
+                                                                            <th scope="col">Mail</th>
+                                                                            <th scope="col">...</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="bordered-profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="row">
+                                    <div class="container-fluid">
+                                        <div class="card card-default">
+                                            <div class="card-body">
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label>Codigo de Usuario</label>
+                                                            <input type="text" placeholder="Codigo de Acceso" class="form-control" id="txCodUsuario" name="txCodUsuario" onclick="return validarCodUsuario()">
+                                                            <span class="label" id="valCodUsuario" style="display:none; font-size:12px; color:red">Codigo de Usuario</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Nombre de Usuario</label>
+                                                            <input type="text" placeholder="Nombre de Usuario" class="form-control" id="txNombre_Usuario" name="txNombre_Usuario" style="width:100%;" onclick="return validarNombre_Usuario()" onkeyup="javascript:this.value=this.value.toUpperCase();">
+                                                            <span class="label" id="valNombre_Usuario" style="display:none; font-size:12px; color:red">Ingrese Nombre de Usuario</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label>Login Dominio</label>
+                                                            <select class="form-select" id="txflagActDir" name="txflagActDir" style="width: 100%;background-color:khaki" onclick="return validarflagActDir()">
+                                                                <option value="todo">Seleccione</option>
+                                                                <option value="true">Activo</option>
+                                                                <option value="false">Inactivo</option>
+                                                            </select>
+                                                            <span class="label" id="valflagActDir" style="display:none; font-size:12px; color:red">Ingrese Estado</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Password</label>
+                                                            <input type="password" placeholder="Password" class="form-control" id="txPasswd" name="txPasswd" Texmode style="width:100%;" onclick="return validarPasswd()">
+                                                            <span class="label" id="valPasswd" style="display:none; font-size:12px; color:red">Ingrese Password si no eres usuario de Dominio</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label>Estado</label>
+                                                            <select class="form-select" id="txEstado" name="txEstado" style="width: 100%;background-color:khaki" onclick="return validarEstado()">
+                                                                <option value="todo">Seleccione</option>
+                                                                <option value="A">Activo</option>
+                                                                <option value="X">Inactivo</option>
+                                                            </select>
+                                                            <span class="label" id="valEstado" style="display:none; font-size:12px; color:red">Ingrese Estado</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <div class="form-group">
+                                                            <label>Perfil Usuario</label>
+                                                            <select class="form-select" id="txIDPerfil" name="txIDPerfil" style="width: 100%;background-color:khaki" onclick="return validarIDPerfil()">
+                                                                <option value="todo">Seleccione</option>
+                                                                @{
+                                                                if (ViewData["Perfil"] != null)
+                                                                    {
+                                                                        foreach (var item in ViewData["Perfil"] as IList<CPerfil>)
+                                                                        {
+                                                                                            <option value="@item.IDPerfil">@item.Des_Perfil</option>
+                                                                        }
+                                                                    }
+                                                                }
+                                                            </select>
+                                                            <span class="label" id="valIDPerfil" style="display:none; font-size:12px; color:red">Ingrese Perfil</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <div class="form-group">
+                                                            <label>Mail Usuario</label>
+                                                            <input type="text" placeholder="example@ejmplo.com" class="form-control" id="txMail" name="txMail">
+                                                            <span class="label" id="valMail" style="display:none; font-size:12px; color:red">Ingrese Mail del Usuario</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <br />
+                                                <div class="row">
+                                                    <div class=" text-center">
+                                                        <div>
+                                                            <button id="btGuardar" class="btn btn-success" title="Guardar" onclick="Grabar()">
+                                                                <span>Guardar Nuevo</span>
+                                                                <img src="~/img/save.png" width="20" height="20" alt="" />
+                                                            </button>
+                                                            <button class="btn btn-warning" type="submit" onclick="return Cancelar()">
+                                                                <span>Cancelar</span>
+                                                                <img src="~/img/cancelar.png" width="20" height="20" alt="" />
+                                                            </button>
+                                                            <button class="btn btn-primary" type="submit" onclick="return Atras()">
+                                                                <span>Atras</span>
+                                                                <img src="~/img/undo.png" width="20" height="20" alt="" />
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="Grabado" tabindex="-1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title">Datos Guardados</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="return closePopup()"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <div class="card">
+                                            <div class="card-body" style="padding: 0 0px 0px 0px;">
+                                                <h2><label>Registro exitoso.</label></h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal" onclick="return closePopup()">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        window.onload = function () {
+            
+        }
+        function Nuevo() {
+            Cancelar();
+            var firstTab = document.getElementById("profile-tab");
+            firstTab.click();
+        }
+        function Atras() {
+            CancelarBus();
+            var firstTab = document.getElementById("home-tab");
+            firstTab.click();
+        }
+        function Mostrar_Panel_Grabado() {
+            debugger;
+            $("#Grabado").modal("show");
+        }
+        function closePopup() {
+            debugger;
+            $("#Grabado").modal("hide");
+        }
+        
+        function validarCodUsuario() {
+            debugger;
+            var CodUsuario = $('#txCodUsuario').val()
+            if (CodUsuario == "") {
+                $('#valCodUsuario').hide();
+            }
+            else {
+                document.getElementById('valCodUsuario').style.display = 'none';
+            }
+        }
+                
+        function validarNombre_Usuario() {
+            debugger;
+            var Nombre_Usuario = $('#txNombre_Usuario').val()
+            if (Nombre_Usuario == "") {
+                $('#valNombre_Usuario').hide();
+            }
+            else {
+                document.getElementById('valNombre_Usuario').style.display = 'none';
+            }
+        }
+                
+        function validarflagActDir() {
+            debugger;
+            var flagActDir = $('#txflagActDir').val()
+            if (flagActDir == "todo") {
+                $('#valflagActDir').hide();
+            }
+            else {
+                document.getElementById('valflagActDir').style.display = 'none';
+            }
+        }
+                
+        function validarPasswd() {
+            debugger;
+            var Passwd = $('#txPasswd').val()
+            if (Passwd == "") {
+                $('#valPasswd').hide();
+            }
+            else {
+                document.getElementById('valPasswd').style.display = 'none';
+            }
+        }
+                
+        function validarIDPerfil() {
+            debugger;
+            var IDPerfil = $('#txIDPerfil').val()
+            if (IDPerfil == "todo") {
+                $('#valIDPerfil').hide();
+            }
+            else {
+                document.getElementById('valIDPerfil').style.display = 'none';
+            }
+        }
+                
+        function validarEstado() {
+            debugger;
+            var Estado = $('#txEstado').val()
+            if (Estado == "todo") {
+                $('#valEstado').hide();
+            }
+            else {
+                document.getElementById('valEstado').style.display = 'none';
+            }
+        }
+        
+        function validarMail() {
+            debugger;
+            var Mail = $('#txMail').val()
+            if (Mail == "") {
+                $('#valMail').hide();
+            }
+            else {
+                document.getElementById('valMail').style.display = 'none';
+            }
+        }
+        function CancelarBus() {
+            debugger;
+            var tabla = document.getElementById('taUsuario');
+            $('#taUsuario > tbody').empty();
+            // Eliminar todas las filas excepto la primera (encabezados)
+            if (tabla.rows.length > 1) {
+                for (var i = 1; i <= tabla.rows.length; i++) {
+                    tabla.deleteRow(i);
+                }
+            }
+            document.getElementById('CodUsuario').value = "";
+            document.getElementById('Nombre_Usuario').value = "";
+            document.getElementById('IDPerfil').value = "todo";
+        }
+        function Cancelar() {
+            document.getElementById('valCodUsuario').style.display = 'none';
+            document.getElementById('valNombre_Usuario').style.display = 'none';
+            document.getElementById('valflagActDir').style.display = 'none';
+            document.getElementById('valPasswd').style.display = 'none';
+            document.getElementById('valIDPerfil').style.display = 'none';
+            document.getElementById('valEstado').style.display = 'none';
+            document.getElementById('txCodUsuario').value = "";
+            document.getElementById('txNombre_Usuario').value = "";
+            document.getElementById('txflagActDir').value = "todo";
+            document.getElementById('txPasswd').value = "";
+            document.getElementById('txIDPerfil').value = "todo";
+            document.getElementById('txEstado').value = "todo";
+            document.getElementById('txMail').value = "";
+        }
+
+        function Grabar() {
+            debugger;
+            
+            var CodUsuario_ = $('#txCodUsuario').val();
+            var Nombre_Usuario_ = $('#txNombre_Usuario').val();
+            var flagActDir_ = $('#txflagActDir').val();
+            var Passwd_ = $('#txPasswd').val();
+            var Estado_ = $('#txEstado').val();
+            var IDPerfil_ = $('#txIDPerfil').val();
+            var Mail_ = $('#txMail').val();
+            if (CodUsuario_ != "" && Nombre_Usuario_ != "" && flagActDir_ != "todo" && Passwd_ != "" && IDPerfil_ != "todo" && Estado_ != "todo") {
+                var record = new FormData();
+                record.append("CodUsuario", $('#txCodUsuario').val());
+                record.append("Nombre_Usuario", $('#txNombre_Usuario').val());
+                record.append("flagActDir", $('#txflagActDir').val());
+                record.append("Passwd", $('#txPasswd').val());
+                record.append("Nivel", $('#txNivel').val());
+                record.append("Estado", $('#txEstado').val());
+                record.append("IDPerfil", $('#txIDPerfil').val());
+                record.append("Mail", $('#txMail').val());
+                $.ajax({
+                    type: "POST",
+                    url: '@Url.Action("Grabar")',
+                    data: record,
+                    contentType: "application/json; charset=utf-8",
+                    dataType: "json",
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    success: function (result) {
+                        var Error = result.error;
+                        //console.log(Error);
+                        if (!Error) {
+                            window.alert(Error);
+                            alert("Registro no Guardado");
+                        }
+                        else {
+                            document.getElementById('valCodUsuario').style.display = 'none';
+                            document.getElementById('valNombre_Usuario').style.display = 'none';
+                            document.getElementById('valflagActDir').style.display = 'none';
+                            document.getElementById('valPasswd').style.display = 'none';
+                            document.getElementById('valEstado').style.display = 'none';
+                            document.getElementById('valIDPerfil').style.display = 'none';
+                            document.getElementById('txCodUsuario').value = "";
+                            document.getElementById('txNombre_Usuario').value = "";
+                            document.getElementById('txflagActDir').value = "todo";
+                            document.getElementById('txPasswd').value = "";
+                            document.getElementById('txEstado').value = "todo";
+                            document.getElementById('txIDPerfil').value = "todo";
+                            document.getElementById('txMail').value = "";
+                            Mostrar_Panel_Grabado();
+                        }
+                    },
+                    error: function (data) {
+                        window.alert('Error en el grabado');
+                    }
+                });
+            }
+            else {
+                $('#txCodUsuario').focus();
+                if (CodUsuario_ == "") {
+                    $('#valCodUsuario').show();
+                }
+                if (Nombre_Usuario_ == "") {
+                    $('#valNombre_Usuario').show();
+                }
+                if (flagActDir_ == "todo") {
+                    $('#valflagActDir').show();
+                }
+                if (Passwd_ == "" && (flagActDir_ != "todo" || flagActDir_ != "1")) {
+                    $('#valPasswd').show();
+                }
+                if (IDPerfil_ == "todo") {
+                    $('#valIDPerfil').show();
+                }
+                if (Estado_ == "todo") {
+                    $('#valEstado').show();
+                }
+                
+            }
+        }
+        function Buscar() {
+            debugger;
+            var record = {
+                CodUsuario: $('#CodUsuario').val(),
+                Nombre_Usuario: $('#Nombre_Usuario').val(),
+                IDPerfil: $('#IDPerfil').val()
+            }
+            $.ajax({
+                url: '@Url.Action("Buscar")',
+                async: false,
+                type: 'GET',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (data) {
+                    $('#taUsuario > tbody').empty();
+                    debugger;
+                    if (data.length > 0) {
+                        for (var i = 0; i < data.length; i++) {
+                            var newRow =
+                                "<tr>" +
+                                "<td>" + data[i].codUsuario + "</td>" +
+                                "<td>" + data[i].nombre_Usuario + "</td>" +
+                                "<td>" + data[i].flagActDir + "</td>" +
+                                "<td>" + data[i].estado + "</td>" +
+                                "<td>" + data[i].idPerfil + "</td>" +
+                                "<td>" + data[i].mail + "</td>" +
+                                "<td>" +
+                                "<button type='button' class='btn btn-primary' data-bs-toggle='modal' onclick='return Editar(\"" + data[i].codUsuario + "\")'>Editar</button>" +
+                                "</td>"
+                            "</tr>";
+                            $(newRow).appendTo("#taUsuario tbody");
+                        }
+                    }
+                    else {
+                        alert("No se encontro datos.");
+                    }
+                },
+                error: function (data) {
+                    window.alert(data.message);
+                }
+            });
+        }
+        function Editar(codUsuario) {
+            debugger;
+            Cancelar();
+            var record = {
+                CodUsuario: codUsuario
+            };
+            $.ajax({
+                url: '@Url.Action("Editar")',
+                async: false,
+                type: 'GET',
+                data: record,
+                beforeSend: function (xhr, opts) { },
+                success: function (data) {
+                    if (data.codUsuario != null) {
+                        debugger;
+                        var firstTab = document.getElementById("profile-tab");
+                        firstTab.click();
+                        document.getElementById('txCodUsuario').value = data.codUsuario;
+                        document.getElementById('txNombre_Usuario').value = data.nombre_Usuario;
+                        document.getElementById('txflagActDir').value = data.flagActDir;
+                        document.getElementById('txEstado').value = data.estado;
+                        document.getElementById('txIDPerfil').value = data.idPerfil;
+                        document.getElementById('txMail').value = data.mail;
+
+                    }
+                    else {
+                        alert("Datos no Recuperados");
+                    }
+                },
+                error: function (data) {
+                    window.alert(data.message);
+                }
+            });
+        }
+        function ejecutaAlerta(Mensaje) {
+            var w = window.open('SisAutBal', '_blank', 'toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=500,width=500,height=20')
+            w.document.write(Mensaje)
+            w.focus()
+            setTimeout(function () { w.close(); }, 5000)
+        }
+        function validateNumberInput(event) {
+            var input = event.target;
+            // Elimina cualquier carácter que no sea un número
+            input.value = input.value.replace(/[^0-9]/g, '');
+        }
+    </script>
+</body>
+</html>
